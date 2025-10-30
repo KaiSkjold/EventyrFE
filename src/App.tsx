@@ -1,14 +1,14 @@
 import './App.css'
-import NavbarComponent from './components/NavbarComponent'
-import StorySelectionComponent from './components/StorySelectionComponent'
+import Navbar from './components/navbarComponent/Navbar'
+import StorySelection from './components/storySelectionComponent/StorySelection'
 
 function App() {
 
   return (
     <>
-    <NavbarComponent />
+    <Navbar />
     <div className="main">
-      <StorySelectionComponent />
+      <StorySelection />
     </div>
     </>
   )
