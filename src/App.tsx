@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import './App.css'
 import Navbar from './components/navbarComponent/Navbar'
+import StorySelectionPage from './pages/StorySelectionPage'
+import './App.css'
 
 function App() {
 
@@ -9,7 +10,7 @@ function App() {
       <Navbar />
       <main className="main">
         <Routes>
-          <Route path="/" element={<div>Story Selection</div>} />
+          <Route path="/" element={<StorySelectionPage />} />
           <Route path="/about" element={<div>About Page</div>} />
         </Routes>
       </main>

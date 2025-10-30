@@ -1,7 +1,15 @@
+import { type ButtonHTMLAttributes, type ReactNode } from 'react';
 
-const Button = () => {
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+  children: ReactNode;
+  color?: string;
+}
+
+const Button = (buttonProps: ButtonProps) => {
   return (
-    <div>Button</div>
+    <button {...buttonProps} style={{ backgroundColor: buttonProps.color }}>
+      {buttonProps.children}
+    </button>
   )
 }
 

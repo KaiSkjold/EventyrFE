@@ -1,6 +1,9 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css";
+import { Logo } from "../svgComponents/Logo";
+import { BurgerMenu } from "../svgComponents/BurgerMenu";
+import Button from "../ui/buttonComponent/Button";
 
 const Navbar = () => {
 
@@ -18,6 +21,7 @@ const Navbar = () => {
 
           {/* Logo */}
           <div className="logo">
+            <Logo width={20} height={20} strokeColor="var(--text-color)" />
             <p>Vælg Dit Eget Eventyr</p>
           </div>
 
@@ -30,10 +34,9 @@ const Navbar = () => {
         </div>
 
         {/* Burger menu icon for mobile */}
-        <div className="menuIcon" onClick={toggleMenu}>
-          {/* Burgermenu */}
-          <p>MenuIcon</p>
-        </div>
+        <Button className="menuIcon" onClick={toggleMenu} color="var(--secondary-color)">
+            <BurgerMenu width={24} height={24} strokeColor="var(--text-color)" />
+        </Button>
 
       </div>
     </div>

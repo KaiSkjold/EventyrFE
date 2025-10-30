@@ -1,6 +1,25 @@
 #root {
-  max-width: 1280px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background-image: url("assets/background/temporary-background-one.jpg");
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  background-color: var(--primary-color);
+  border-radius: 20px;
+  height: 100vh;
+  width: 80%;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4rem;
 }

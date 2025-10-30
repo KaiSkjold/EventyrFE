@@ -1,7 +1,11 @@
 
 const StorySelection = () => {
   return (
-    <div>StorySelectionComponent</div>
+    <div className="storyCard">
+      <div className="title">Title</div>
+      <div className="description">Description</div>
+      <div className="img">Image</div>
+    </div>
   )
 }
 
