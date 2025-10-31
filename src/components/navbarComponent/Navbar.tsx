@@ -29,7 +29,7 @@ const Navbar = () => {
           {/* Links for navigation desktop */}
           <div className={`links ${isMenuOpen ? "showMenu" : ""}`}>
             <Link to="/" className={`navLink ${location.pathname === "/" ? "isActive" : ""}`}>Læs et eventyr</Link>
-            <Link to="/about" className={`navLink ${location.pathname === "/about" ? "isActive" : ""}`}>Om siden</Link>
+            <Link to="/indstillinger" className={`navLink ${location.pathname === "/indstillinger" ? "isActive" : ""}`}>Indstillinger</Link>
           </div>
         </div>
 

@@ -1,0 +1,16 @@
+.storyContainer {
+    padding: 2rem 4rem;
+}
+.storyCards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4rem;
+}

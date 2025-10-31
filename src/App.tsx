@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from './components/navbarComponent/Navbar'
 import StorySelectionPage from './pages/StorySelectionPage'
 import './App.css'
+import SettingsPage from './pages/SettingsPage'
 
 function App() {
 
@@ -11,7 +12,7 @@ function App() {
       <main className="main">
         <Routes>
           <Route path="/" element={<StorySelectionPage />} />
-          <Route path="/about" element={<div>About Page</div>} />
+          <Route path="/indstillinger" element={<SettingsPage />} />
         </Routes>
       </main>
     </Router>
