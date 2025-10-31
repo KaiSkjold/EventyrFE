@@ -1,3 +1,4 @@
+import ChangeTheme from "../components/ChangeThemeComponent/ChangeTheme"
 
 const SettingsPage = () => {
   return (
@@ -5,14 +6,6 @@ const SettingsPage = () => {
         <div className="settingsHeader">
             <h1>Indstillinger</h1>
             <p>Her kan du ændre dine indstillinger.</p>
-        </div>
-
-        {/* Theme settings */}
-        <div className="themeSettings">
-            <h3>Vælg tema</h3>
-            <div className="themeOptions">
-                <p>Light/Dark theme</p>
-            </div>
         </div>
 
         {/* Language settings */}
@@ -28,6 +21,14 @@ const SettingsPage = () => {
             <h3>Vælg niveau</h3>
             <div className="levelOptions">
                 <p>vælg niveau</p>
+            </div>
+        </div>
+        
+        {/* Theme settings */}
+        <div className="themeSettings">
+            <h3>Vælg tema</h3>
+            <div className="themeOptions">
+                <ChangeTheme />
             </div>
         </div>
 
