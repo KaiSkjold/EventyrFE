@@ -1,0 +1,28 @@
+.button-style {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.no-border {
+  border: none;
+}
+
+.with-border {
+  border-color: #646cff;
+}
+
+.with-border:hover {
+  border-color: #535bf2;
+}
+
+.button-style:hover {
+  background-color: #535bf2;
+  opacity: 0.8;
+}

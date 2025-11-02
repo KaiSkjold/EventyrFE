@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import "./Navbar.css";
 import { Logo } from "../svgComponents/Logo";
 import { BurgerMenu } from "../svgComponents/BurgerMenu";
+import "./Navbar.css";
 import Button from "../ui/buttonComponent/Button";
 
 const Navbar = () => {
@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
-      <div className="navHeader">
+      <div className="nav-header">
         <div className="left">
 
           {/* Logo */}
@@ -27,14 +27,14 @@ const Navbar = () => {
 
 
           {/* Links for navigation desktop */}
-          <div className={`links ${isMenuOpen ? "showMenu" : ""}`}>
-            <Link to="/" className={`navLink ${location.pathname === "/" ? "isActive" : ""}`}>Læs et eventyr</Link>
-            <Link to="/indstillinger" className={`navLink ${location.pathname === "/indstillinger" ? "isActive" : ""}`}>Indstillinger</Link>
+          <div className={`links ${isMenuOpen ? "show-menu" : ""}`}>
+            <Link to="/" className={`nav-link ${location.pathname === "/" ? "isActive" : ""}`}>Læs et eventyr</Link>
+            <Link to="/indstillinger" className={`nav-link ${location.pathname === "/indstillinger" ? "isActive" : ""}`}>Indstillinger</Link>
           </div>
         </div>
 
         {/* Burger menu icon for mobile */}
-        <Button className="menuIcon" onClick={toggleMenu} color="var(--secondary-color)">
+        <Button className="menu-icon" onClick={toggleMenu} borderStyle="no-border">
             <BurgerMenu width={24} height={24} strokeColor="var(--text-color)" />
         </Button>
 

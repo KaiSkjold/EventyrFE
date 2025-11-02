@@ -1,7 +1,7 @@
-.storyContainer {
+.story-container {
     padding: 2rem 4rem;
 }
-.storyCards {
+.story-cards {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
