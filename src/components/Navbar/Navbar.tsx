@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Logo } from "../svgComponents/Logo";
-import { BurgerMenu } from "../svgComponents/BurgerMenu";
+import { Logo } from "../Svg/Logo";
+import { BurgerMenu } from "../Svg/BurgerMenu";
 import "./Navbar.css";
-import Button from "../ui/buttonComponent/Button";
+import Button from "../ui/Button/Button";
 
 const Navbar = () => {
 

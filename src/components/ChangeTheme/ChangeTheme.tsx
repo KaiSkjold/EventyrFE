@@ -1,7 +1,7 @@
 import { useTheme } from "../../hooks/useTheme";
-import Moon from "../svgComponents/Moon";
-import Sun from "../svgComponents/Sun";
-import Button from "../ui/buttonComponent/Button";
+import Moon from "../Svg/Moon";
+import Sun from "../Svg/Sun";
+import Button from "../ui/Button/Button";
 
 
 const ChangeTheme = () => {

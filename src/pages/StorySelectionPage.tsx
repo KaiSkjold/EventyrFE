@@ -1,4 +1,4 @@
-import StorySelection from "../components/storySelectionComponent/StorySelection"
+import StorySelection from "../components/StorySelection/StorySelection"
 
 const StorySelectionPage = () => {
   return (

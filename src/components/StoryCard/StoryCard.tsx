@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Heart from '../svgComponents/Heart'
+import Heart from '../Svg/Heart'
 import './StoryCard.css'
 
 const StoryCard = () => {

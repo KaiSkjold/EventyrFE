@@ -1,5 +1,5 @@
 import ChangeAccentColor from '../ChangeAccentColor/ChangeAccentColor';
-import ChangeTheme from '../ChangeThemeComponent/ChangeTheme'
+import ChangeTheme from '../ChangeTheme/ChangeTheme'
 import FontToggle from '../FontToggle/FontToggle'
 import './Settings.css';
 

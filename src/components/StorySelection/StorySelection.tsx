@@ -1,4 +1,4 @@
-import StoryCard from '../StoryCardComponent/StoryCard'
+import StoryCard from '../StoryCard/StoryCard'
 import './StorySelection.css'
 
 const StorySelection = () => {

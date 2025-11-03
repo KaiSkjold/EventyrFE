@@ -1,6 +1,6 @@
 import useFont from "../../hooks/useFont";
-import { Font } from "../svgComponents/Font";
-import Button from "../ui/buttonComponent/Button";
+import { Font } from "../Svg/Font";
+import Button from "../ui/Button/Button";
 
 
 function FontToggle() {
