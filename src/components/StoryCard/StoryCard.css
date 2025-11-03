@@ -6,9 +6,44 @@
     border: 2px solid var(--accent-color);
     border-radius: 10px;
     padding: 1rem;
+    max-width: 24rem;
+    min-width: 10rem;
+}
+
+.card-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-top {
+    display: flex;
+    justify-content: center;
+    margin: 0rem;
+
+    h3 {
+        margin: 0 0 0.5rem 0;
+        text-align: center;
+    }
 }
 
 .favorite {
-    align-self: flex-end;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
     cursor: pointer;
+    width: 100%;
+}
+
+.card-img {
+    width: 100%;
+    height: 12.5rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+}
+
+.card-description {
+    text-wrap: balance;
+    text-align: center;
 }

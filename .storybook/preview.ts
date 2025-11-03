@@ -1,3 +1,5 @@
+import '../src/index.css'; // Global CSS
+import '../src/App.css'; // TODO is this needed?
 import type { Preview } from '@storybook/react-vite'
 
 const preview: Preview = {

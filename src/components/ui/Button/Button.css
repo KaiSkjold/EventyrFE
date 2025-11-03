@@ -15,14 +15,14 @@
 }
 
 .with-border {
-  border-color: #646cff;
+  border-color: var(--accent-color);
 }
 
 .with-border:hover {
-  border-color: #535bf2;
+  border-color: var(--accent-color);
 }
 
 .button-style:hover {
-  background-color: #535bf2;
+  background-color: var(--accent-color);
   opacity: 0.8;
 }
