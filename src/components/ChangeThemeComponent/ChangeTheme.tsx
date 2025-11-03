@@ -11,7 +11,7 @@ const ChangeTheme = () => {
     const moonIcon = <Moon width={20} height={20} strokeColor="var(--text-color)" />;
 
   return (
-    <Button onClick={toggleTheme} className="theme-toggle-button" color="var(--secondary-color)" borderStyle="no-border">
+    <Button onClick={toggleTheme} color="var(--secondary-color)" borderStyle="no-border" >
       {theme === 'light' ? moonIcon : sunIcon} <span className="theme-toggle-text">{theme === 'light' ? 'Mørkt' : 'Lyst'} tema</span>
     </Button>
   )

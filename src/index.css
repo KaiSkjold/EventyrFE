@@ -1,5 +1,9 @@
 :root {
-  font-family: system-ui, Helvetica, Arial, sans-serif;
+  /* Define font-family variables and default font */
+  /* --font-family-default: 'Akaya Kanadaka', system-ui, Helvetica, Arial, sans-serif; */
+  --font-family-default: system-ui, Helvetica, Arial, sans-serif;
+  --font-family-dyslexic: 'Open-Dyslexic', sans-serif;
+  --font-family: var(--font-family-default);
   line-height: 1.5;
   font-weight: 400;
 
@@ -13,13 +17,24 @@ body {
   width: 100%;
   height: 100%;
   background-color: var(--primary-color);
+  /* use the active font variable (switched via data-font on :root)") */
+  font-family: var(--font-family);
 }
 
-h1, h2, h3, h4, p {
+h1, h2, h3, h4, p, span, div, label {
   color: var(--text-color)
 }
 
-
+input,
+select,
+textarea,
+button,
+label,
+option {
+  font-family: var(--font-family);
+  font-size: inherit;
+  line-height: inherit;
+}
 
 @media (prefers-color-scheme: light) {
 
@@ -37,4 +52,9 @@ h1, h2, h3, h4, p {
     --text-color: #fff;
     --alert-color: #e41515;
   }
+}
+
+/* When the document root has data-font="dyslexic", switch the font variable */
+:root[data-font="dyslexic"] {
+  --font-family: var(--font-family-dyslexic);
 }
