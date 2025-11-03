@@ -6,6 +6,8 @@
   padding: 2rem;
   text-align: center;
   background-image: url("assets/background/temporary-background-one.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .main {
