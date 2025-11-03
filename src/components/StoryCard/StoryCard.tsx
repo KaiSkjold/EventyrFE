@@ -11,9 +11,13 @@ interface StoryCardProps {
 
 const StoryCard = ({ title, description, imageUrl }: StoryCardProps) => {
 
+  const [isExpanded, setIsExpanded] = useState(false);
   const [isFavorite, setIsFavorite] = useState<'filled' | 'outlined'>('outlined')
   const handleFavoriteClick = () => {
     setIsFavorite(isFavorite === 'filled' ? 'outlined' : 'filled')
+  }
+  const toggleDescription = () => {
+    setIsExpanded(!isExpanded);
   }
 
   return (
@@ -27,7 +31,7 @@ const StoryCard = ({ title, description, imageUrl }: StoryCardProps) => {
             className="card-img"
             style={{ backgroundImage: `url(${imageUrl})` }}
             />
-        <div className="card-description"><p>{description}</p></div>
+        <div className={`card-description ${isExpanded ? 'expanded' : ''}`}><p onClick={toggleDescription}>{description}</p></div>
         <Button borderStyle='with-border'>Læs historie</Button>
       </div>
     </div>

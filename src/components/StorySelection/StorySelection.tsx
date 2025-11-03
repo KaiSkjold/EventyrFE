@@ -1,7 +1,23 @@
+import { useEffect, useState } from 'react'
 import StoryCard from '../StoryCard/StoryCard'
 import './StorySelection.css'
+import type { Story } from '../../services/api/Types'
+import { storiesApi } from '../../services/api/StoryApi'
 
 const StorySelection = () => {
+
+  const [stories, setStories] = useState<Story[]>([])
+
+  useEffect(() => {
+    const fetchStories = async () => {
+      const stories = await storiesApi.getAllStories();
+      setStories(stories);
+    };
+
+    fetchStories();
+  }, []);
+
+
   return (
     <div className='story-container'>
         {/* Page heading */}
@@ -11,21 +27,14 @@ const StorySelection = () => {
 
         {/* Story cards */}
         <div className="story-cards">
-            <StoryCard
-                title="Story Title 1"
-                description="A classic fairy tale about a clever tailor who outsmarts giants and wins a kingdom."
-                imageUrl="https://picsum.photos/200/100"
-            />
-            <StoryCard
-                title="Story Title 2"
-                description="A classic fairy tale about a clever tailor who outsmarts giants and wins a kingdom."
-                imageUrl="https://picsum.photos/200/100"
-            />
-            <StoryCard
-                title="Story Title 3"
-                description="A classic fairy tale about a clever tailor who outsmarts giants and wins a kingdom."
-                imageUrl="https://picsum.photos/200/100"
-            />
+            {stories.map((story) => (
+                <StoryCard
+                    key={story.id}
+                    title={story.title}
+                    description={story.description}
+                    imageUrl={story.imgUrl}
+                />
+            ))}
         </div>
     </div>
   )
