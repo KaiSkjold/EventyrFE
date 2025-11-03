@@ -1,10 +1,11 @@
+import ChangeAccentColor from '../ChangeAccentColor/ChangeAccentColor';
 import ChangeTheme from '../ChangeThemeComponent/ChangeTheme'
 import FontToggle from '../FontToggle/FontToggle'
 import './Settings.css';
 
 const Settings = () => {
 
-
+    
   return (
     <div className="settings-container">
         <div className="settings-header">
@@ -56,12 +57,7 @@ const Settings = () => {
         <div className="settings-item">
             <h3>Vælg accentfarve</h3>
             <div className="settings-item-option">
-                <select name="accent-color" id="accent-color-select">
-                    <option className='blue' value="blue">Blå</option>
-                    <option className='red' value="red">Rød</option>
-                    <option className='green' value="green">Grøn</option>
-                    <option className='purple' value="purple">Lilla</option>
-                </select>
+                <ChangeAccentColor />
             </div>
         </div>
     </div>

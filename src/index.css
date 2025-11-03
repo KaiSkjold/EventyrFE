@@ -7,6 +7,8 @@
   --font-family: var(--font-family-default);
   line-height: 1.5;
   font-weight: 400;
+  /* default accent color fallback (can be overridden by themes or at runtime) */
+  --accent-color: #535bf2;
 
 }
 
