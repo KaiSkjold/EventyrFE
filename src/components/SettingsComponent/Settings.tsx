@@ -21,18 +21,20 @@ const Settings = () => {
             </div>
         </div>
 
-        {/* Language settings */}
+        {/* TODO Language settings */}
         <div className="settings-item">
             <h3>Vælg sprog</h3>
             <div className="settings-item-option">
                 <select name="language" id="language-select">
                     <option value="danish">Dansk</option>
                     <option value="english">Engelsk</option>
+                    <option value="german">Tysk</option>
+                    <option value="french">Fransk</option>
                 </select>
             </div>
         </div>
 
-        {/* Level settings */}
+        {/* TODO Level settings */}
         <div className="settings-item">
             <h3>Vælg niveau</h3>
             <div className="settings-item-option">
