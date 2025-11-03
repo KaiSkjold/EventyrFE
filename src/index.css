@@ -1,5 +1,6 @@
 :root {
   /* Define font-family variables and default font */
+  /* TODO: should i use akaya kadanaka or not? */
   /* --font-family-default: 'Akaya Kanadaka', system-ui, Helvetica, Arial, sans-serif; */
   --font-family-default: system-ui, Helvetica, Arial, sans-serif;
   --font-family-dyslexic: 'Open-Dyslexic', sans-serif;
