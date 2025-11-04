@@ -1,16 +1,16 @@
 export interface Page {
-  id: string;
+  pageId: string;
   pageNumber: number;
   title: string;
-  content: string;
-  imageUrl: string;
-  outgoingLinks: PageLink[];
-  incomingLinks: PageLink[];
+  description: string;
+  imgUrl: string;
+  outgoingPageLinks: PageLink[];
+  incomingPageLinks: PageLink[];
 }
 
 export interface PageLink {
-  id: string;
-  choice: string;
+  pageLinkId: string;
+  choiceText: string;
   fromPageId: string;
   fromPage: Page;
   toPageId: string;
@@ -18,7 +18,7 @@ export interface PageLink {
 }
 
 export interface Story {
-  id: string;
+  storyId: string;
   title: string;
   description: string;
   imgUrl: string;

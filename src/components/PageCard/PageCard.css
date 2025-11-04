@@ -1,0 +1,72 @@
+.story-page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--accent-color);
+    border-radius: 10px;
+    max-width: 80%;
+    padding: 1rem;
+}
+
+.page-reading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.page-image {
+    width: 70%;
+    height: 12.5rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+}
+
+.page-description {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    white-space: balance;
+}
+
+.page-bookmark {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    cursor: pointer;
+    width: 100%;
+}
+
+.page-choice-text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.page-actions {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+    width: 100%;
+}
+
+.page-actions Button {
+    margin: 0.5rem;
+}

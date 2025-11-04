@@ -12,8 +12,9 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
     args: {
+        storyId: 'story-001',
         title: 'The Brave Little Tailor',
         description: 'A classic fairy tale about a clever tailor who outsmarts giants and wins a kingdom.',
-        imageUrl: 'https://picsum.photos/200/100',
+        imgUrl: 'https://picsum.photos/200/100',
     },
 };

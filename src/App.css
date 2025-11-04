@@ -1,13 +1,25 @@
+:root {
+  /* default background variable values */
+  --bg-image: url("assets/background/temporary-background-one.jpg");
+  --bg-size: cover;
+  --bg-position: center;
+  --bg-repeat: no-repeat;
+  --bg-attachment: fixed;
+}
+
 #root {
   display: flex;
   justify-content: center;
   width: 100%;
-  margin: 0 auto;
+  margin: 0;
   padding: 2rem;
   text-align: center;
-  background-image: url("assets/background/temporary-background-one.jpg");
-  background-size: cover;
-  background-position: center;
+  height: var(--bg-height);
+  background-image: var(--bg-image);
+  background-size: var(--bg-size);
+  background-position: var(--bg-position);
+  background-repeat: var(--bg-repeat);
+  background-attachment: var(--bg-attachment);
 }
 
 .main {

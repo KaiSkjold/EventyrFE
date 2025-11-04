@@ -1,7 +1,9 @@
+import Page from "../components/PageCard/PageCard"
+
 
 const StoryPage = () => {
   return (
-    <div>StoryPage</div>
+    <Page />
   )
 }
 

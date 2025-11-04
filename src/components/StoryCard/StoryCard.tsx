@@ -2,20 +2,28 @@ import { useState } from 'react'
 import Heart from '../Svg/Heart'
 import './StoryCard.css'
 import Button from '../ui/Button/Button'
+import { useNavigate } from 'react-router-dom'
 
 interface StoryCardProps {
   title: string
   description: string
-  imageUrl: string
+  imgUrl: string
+  storyId: string
 }
 
-const StoryCard = ({ title, description, imageUrl }: StoryCardProps) => {
-
-  const [isExpanded, setIsExpanded] = useState(false);
+const StoryCard = ({ title, description, imgUrl, storyId }: StoryCardProps) => {
+  
+  // navigate to page
+  const navigate = useNavigate();
+  
+  
+  // favorite state
   const [isFavorite, setIsFavorite] = useState<'filled' | 'outlined'>('outlined')
   const handleFavoriteClick = () => {
     setIsFavorite(isFavorite === 'filled' ? 'outlined' : 'filled')
   }
+  // expand text
+  const [isExpanded, setIsExpanded] = useState(false);
   const toggleDescription = () => {
     setIsExpanded(!isExpanded);
   }
@@ -29,10 +37,10 @@ const StoryCard = ({ title, description, imageUrl }: StoryCardProps) => {
         </div>
          <div 
             className="card-img"
-            style={{ backgroundImage: `url(${imageUrl})` }}
+            style={{ backgroundImage: `url(${imgUrl})` }}
             />
         <div className={`card-description ${isExpanded ? 'expanded' : ''}`}><p onClick={toggleDescription}>{description}</p></div>
-        <Button borderStyle='with-border'>Læs historie</Button>
+  <Button borderStyle='with-border' onClick={() => navigate(`/story/${storyId}`)}>Læs historie</Button>
       </div>
     </div>
   )

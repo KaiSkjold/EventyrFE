@@ -6,6 +6,7 @@ import { storiesApi } from '../../services/api/StoryApi'
 
 const StorySelection = () => {
 
+  // set stories
   const [stories, setStories] = useState<Story[]>([])
 
   useEffect(() => {
@@ -18,6 +19,7 @@ const StorySelection = () => {
   }, []);
 
 
+
   return (
     <div className='story-container'>
         {/* Page heading */}
@@ -28,12 +30,13 @@ const StorySelection = () => {
         {/* Story cards */}
         <div className="story-cards">
             {stories.map((story) => (
-                <StoryCard
-                    key={story.id}
-                    title={story.title}
-                    description={story.description}
-                    imageUrl={story.imgUrl}
-                />
+        <StoryCard
+          key={story.storyId}
+          title={story.title}
+          description={story.description}
+          imgUrl={story.imgUrl}
+          storyId={story.storyId}
+        />
             ))}
         </div>
     </div>

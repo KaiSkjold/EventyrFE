@@ -13,6 +13,17 @@ export const storiesApi = {
       console.error('Error fetching stories:', error);
       throw error;
     }
-  }
+  },
+
+  // Get a specific story by ID
+  async getStoryById(id: string): Promise<Story | null> {
+    try {
+      const response = await axios.get(`${API_BASE_URL}/Stories/${id}`);
+      return response.data;
+    } catch (error) {
+      console.error('Error fetching story:', error);
+      return null;
+    }
+  },
 
 };
