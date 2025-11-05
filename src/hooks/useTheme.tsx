@@ -3,11 +3,12 @@ import { useState, useEffect } from 'react';
 type Theme = 'light' | 'dark';
 
 export function useTheme() {
-  const [theme, setTheme] = useState<Theme>('dark');
+  // Default to light so React state and the inline script's fallback match.
+  const [theme, setTheme] = useState<Theme>('light');
 
   useEffect(() => {
-    // Get saved theme from localStorage or default to dark
-    const savedTheme = localStorage.getItem('theme') as Theme || 'dark';
+    // Get saved theme from localStorage or default to light
+    const savedTheme = (localStorage.getItem('theme') as Theme) || 'light';
     setTheme(savedTheme);
     document.documentElement.setAttribute('data-theme', savedTheme);
   }, []);

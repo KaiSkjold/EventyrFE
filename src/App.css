@@ -5,6 +5,8 @@
   --bg-position: center;
   --bg-repeat: no-repeat;
   --bg-attachment: fixed;
+  /* TODO fix odd scale height vh % issue where it doesnt cover all */
+  --bg-height: 100%;
 }
 
 #root {

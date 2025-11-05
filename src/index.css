@@ -7,8 +7,12 @@
   --font-family: var(--font-family-default);
   line-height: 1.5;
   font-weight: 400;
-  /* default accent color fallback (can be overridden by themes or at runtime) */
+  /* default color fallbacks (can be overridden by themes or at runtime) */
   --accent-color: #535bf2;
+  --primary-color: #F8F7F3;
+  --secondary-color: #ffffff;
+  --text-color: #000000;
+  --alert-color: #e41515;
 
 }
 
@@ -39,22 +43,23 @@ option {
   line-height: inherit;
 }
 
-@media (prefers-color-scheme: light) {
+/* Theme rules (apply regardless of system preference). These override the
+   defaults above when the app sets `data-theme` on the document root. */
 
-  [data-theme="light"] {
-    --primary-color: #f9fafb;
-    --secondary-color: #fff;
-    --accent-color: #535bf2;
-    --text-color: #000;
-    --alert-color: #e41515;
-  }
-    [data-theme="dark"] {
-    --primary-color: #1e1e1e;
-    --secondary-color: #000;
-    --accent-color: #535bf2;
-    --text-color: #fff;
-    --alert-color: #e41515;
-  }
+[data-theme="light"] {
+  --primary-color: #F8F7F3;
+  --secondary-color: #fff;
+  --accent-color: #535bf2;
+  --text-color: #000;
+  --alert-color: #e41515;
+}
+
+[data-theme="dark"] {
+  --primary-color: #1e1e1e;
+  --secondary-color: #000;
+  --accent-color: #535bf2;
+  --text-color: #fff;
+  --alert-color: #e41515;
 }
 
 /* When the document root has data-font="dyslexic", switch the font variable */

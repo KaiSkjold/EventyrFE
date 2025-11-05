@@ -10,6 +10,25 @@
   </head>
   <body>
     <div id="root"></div>
+    <!-- Ensure theme and accent are applied before the app bundle runs to avoid FOUC -->
+    <script>
+      (function () {
+        try {
+          // Use stored theme when present, otherwise default to light so the
+          // page renders with the light theme as the fallback immediately.
+          const theme = localStorage.getItem('theme') || 'light';
+          document.documentElement.setAttribute('data-theme', theme);
+        } catch (e) {
+          /* ignore */
+        }
+        try {
+          const accent = localStorage.getItem('accent-color');
+          if (accent) document.documentElement.style.setProperty('--accent-color', accent);
+        } catch (e) {
+          /* ignore */
+        }
+      })();
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
