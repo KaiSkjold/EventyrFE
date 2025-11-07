@@ -9,6 +9,8 @@ import { useStoryAndFirstPage } from '../../hooks/useStoryAndFirstPage';
 import { useStoryPageStates } from '../../hooks/useStoryPageState';
 import { Cogwheel } from '../Svg/Cogwheel';
 import SettingsModal from '../SettingsModal/SettingsModal';
+import ArrowNarrowLeft from '../Svg/ArrowNarrowLeft';
+import ArrowNarrowRight from '../Svg/ArrowNarrowRight';
 
 const StoryPage = () => {
   // Get storyId from URL parameters
@@ -47,7 +49,8 @@ const StoryPage = () => {
         <div className="story-page-loading">
           <h1>Loading...</h1>
           <Link to="/">
-            Tilbage til forsiden
+          <ArrowNarrowLeft width={20} height={20} strokeColor='var(--text-color)'/>
+            <p>Tilbage til forsiden</p>
           </Link>
         </div>
       );
@@ -63,7 +66,8 @@ const StoryPage = () => {
           {/* Story header with back link and story title */}
           <div className="story-page-header">
             <Link to="/" className="story-page-back-link">
-              Back to stories
+              <ArrowNarrowLeft width={20} height={20} strokeColor='var(--text-color)'/>
+              <p>Tilbage til forsiden</p>
             </Link>
             <h1 className="story-page-story-title">{pageState.story.title}</h1>
             <Button borderStyle='no-border' onClick={() => setIsSettingsOpen(true)}><Cogwheel width={20} height={20}/></Button>
@@ -107,13 +111,15 @@ const StoryPage = () => {
                     borderStyle='no-border'
                     onClick={resetStory}
                   >
-                    Vil du læse den igen?
+                    <ArrowNarrowLeft width={20} height={20} strokeColor='var(--text-color)'/>
+                    <p>Vil du læse den igen?</p>
                   </Button>
                   <Button
                     borderStyle='no-border'
                     onClick={() => window.location.href = '/'}
                   >
-                    Vælg en anden historie at læse
+                    <p>Vælg en anden historie at læse</p>
+                    <ArrowNarrowRight width={20} height={20} strokeColor='var(--text-color)'/>
                   </Button>
                 </div>
               </div>

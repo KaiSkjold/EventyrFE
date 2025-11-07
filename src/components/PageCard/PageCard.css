@@ -26,6 +26,13 @@
     padding: 1rem;
 }
 
+.story-page-back-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
 .page-reading {
     display: flex;
     flex-direction: column;

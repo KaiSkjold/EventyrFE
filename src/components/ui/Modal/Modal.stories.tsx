@@ -11,6 +11,8 @@ const meta: Meta<typeof Modal> = {
 export default meta;
 
 type Story = StoryObj<typeof Modal>;
+
+
 export const DefaultModal: Story = {
   render: (args) => {
     const StoryComponent = () => {
@@ -39,6 +41,7 @@ export const ModalWithText: Story = {
           isOpen={state}
           onClose={() => setState(false)}
         >
+          <p>This is a modal with some text content inside it.</p>
         </Modal>
       );
     };
