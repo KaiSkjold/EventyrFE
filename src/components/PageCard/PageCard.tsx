@@ -7,9 +7,11 @@ import useBackgroundImage from '../../hooks/useBackgroundImage';
 import { useStoryNavigation } from '../../hooks/useStoryNavigation';
 import { useStoryAndFirstPage } from '../../hooks/useStoryAndFirstPage';
 import { useStoryPageStates } from '../../hooks/useStoryPageState';
+import { Cogwheel } from '../Svg/Cogwheel';
+import SettingsModal from '../SettingsModal/SettingsModal';
 
 const StoryPage = () => {
-
+  // Get storyId from URL parameters
   const { storyId } = useParams<{ storyId: string }>();
 
   // Use the hook to get story data and current page
@@ -30,6 +32,9 @@ const StoryPage = () => {
   const handleBookmarkClick = () => {
     setIsBookmarked(isBookmarked === 'filled' ? 'outlined' : 'filled')
   };
+
+  // settings modal state
+  const [isSettingsOpen, setIsSettingsOpen] = useState(false);
 
   // set background image from cover image of story
   useBackgroundImage(story?.imgUrl);
@@ -61,6 +66,7 @@ const StoryPage = () => {
               Back to stories
             </Link>
             <h1 className="story-page-story-title">{pageState.story.title}</h1>
+            <Button borderStyle='no-border' onClick={() => setIsSettingsOpen(true)}><Cogwheel width={20} height={20}/></Button>
           </div>
 
           {/* Page content */}
@@ -112,6 +118,8 @@ const StoryPage = () => {
                 </div>
               </div>
           )}
+          {/* Settings modal */}
+          <SettingsModal isOpen={isSettingsOpen} onClose={() => setIsSettingsOpen(false)} />
         </div>
       );
         

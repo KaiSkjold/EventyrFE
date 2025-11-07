@@ -5,6 +5,16 @@
     align-items: center;
 }
 
+.story-page-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
 .page {
     display: flex;
     flex-direction: column;
@@ -67,8 +77,25 @@
     width: 100%;
 }
 
-.page-actions Button {
+.page-actions button {
     margin: 0.5rem;
+}
+
+/* Story end styling */
+.story-page-end-choices-footer {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    width: 100%;
+    padding-bottom: 2rem;
+}
+
+.story-page-end-footer h3 {
+    text-align: center;
+    margin: 0.5rem 0;
 }
 
 .story-page-end-footer {

@@ -1,6 +1,9 @@
 import ChangeAccentColor from '../ChangeAccentColor/ChangeAccentColor';
 import ChangeTheme from '../ChangeTheme/ChangeTheme'
 import FontToggle from '../FontToggle/FontToggle'
+import { AdjustLevels } from '../Svg/AdjustLevels';
+import ChangeLanguage from '../Svg/ChangeLanguage';
+import { ColorPalette } from '../Svg/ColorPalette';
 import './Settings.css';
 
 const Settings = () => {
@@ -25,6 +28,7 @@ const Settings = () => {
         <div className="settings-item">
             <h3>Vælg sprog</h3>
             <div className="settings-item-option">
+                <ChangeLanguage width={30} height={30} strokeColor="var(--text-color)" />
                 <select name="language" id="language-select">
                     <option value="danish">Dansk</option>
                     <option value="english">Engelsk</option>
@@ -38,6 +42,7 @@ const Settings = () => {
         <div className="settings-item">
             <h3>Vælg niveau</h3>
             <div className="settings-item-option">
+                <AdjustLevels width={30} height={30} strokeColor="var(--text-color)"/>
                 <select name="level" id="level-select">
                     <option value="dyslexi">Ordblind</option>
                     <option value="beginner">Begynder</option>
@@ -59,6 +64,7 @@ const Settings = () => {
         <div className="settings-item">
             <h3>Vælg accentfarve</h3>
             <div className="settings-item-option">
+                <ColorPalette width={30} height={30} strokeColor='var(--accent-color)'/>
                 <ChangeAccentColor />
             </div>
         </div>
