@@ -1,3 +1,4 @@
+/* Styles for big screens */
 .navbar {
     background-color: var(--secondary-color);
     color: var(--text-color);
@@ -58,15 +59,11 @@
 }
 
 .menu-icon {
-  background: none;
-  border: none;
-  cursor: pointer;
-  display: none;
-  padding: 0.5rem;
-  border-radius: 0.25rem;
+  visibility: hidden;
 }
 
 @media (max-width: 768px) {
+    /* Styles for medium screens */
     .links {
         display: none;
         flex-direction: column;
@@ -79,6 +76,7 @@
 
     .menu-icon {
         display: block;
+        visibility: visible;
     }
 
     .nav-link:hover {

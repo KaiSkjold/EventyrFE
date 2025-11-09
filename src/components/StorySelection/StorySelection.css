@@ -1,5 +1,5 @@
 .story-container {
-    padding: 2rem 4rem;
+    padding: 1rem;
 }
 .story-cards {
     display: flex;
@@ -10,9 +10,8 @@
     gap: 4rem;
 }
 
-.title {
+.story-selection-title {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 4rem;
 }

@@ -50,7 +50,7 @@ const StoryPage = () => {
           <h1>Loading...</h1>
           <Link to="/">
           <ArrowNarrowLeft width={20} height={20} strokeColor='var(--text-color)'/>
-            <p>Tilbage til forsiden</p>
+            <p>Tilbage til forsiden: Læs en historie</p>
           </Link>
         </div>
       );
@@ -64,18 +64,18 @@ const StoryPage = () => {
       return (
         <div className="story-page-container">
           {/* Story header with back link and story title */}
-          <div className="story-page-header">
             <Link to="/" className="story-page-back-link">
               <ArrowNarrowLeft width={20} height={20} strokeColor='var(--text-color)'/>
-              <p>Tilbage til forsiden</p>
+              <p>Vælg en anden historie at læse?</p>
             </Link>
-            <h1 className="story-page-story-title">{pageState.story.title}</h1>
-            <Button borderStyle='no-border' onClick={() => setIsSettingsOpen(true)}><Cogwheel width={20} height={20}/></Button>
+          <div className="story-page-header">
+            <h3 className="story-page-story-title">{pageState.story.title}</h3>
+            <Button borderStyle='no-border' onClick={() => setIsSettingsOpen(true)}><Cogwheel width={20} height={20} strokeColor='var(--text-color)'/></Button>
           </div>
 
           {/* Page content */}
           <div className="page">
-            <span className="page-bookmark" onClick={handleBookmarkClick}><Bookmark width={60} height={70} bookmarkType={isBookmarked}/></span>
+            <span className="page-bookmark" onClick={handleBookmarkClick}><Bookmark width={30} height={30} bookmarkType={isBookmarked}/></span>
             <div className="page-reading">
               <div className="page-title"><h3>{pageState.currentPage?.title}</h3></div>
               <div 
@@ -104,7 +104,7 @@ const StoryPage = () => {
             </div>
           </div>
           ) : (
-              <div className="story-page-end-footer">
+              <div>
                 <h3>Dit eventyr er slut for denne gang!</h3>
                 <div className="story-page-end-choices-footer">
                   <Button

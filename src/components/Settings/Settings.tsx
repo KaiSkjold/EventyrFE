@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import ChangeAccentColor from '../ChangeAccentColor/ChangeAccentColor';
 import ChangeTheme from '../ChangeTheme/ChangeTheme'
 import FontToggle from '../FontToggle/FontToggle'
@@ -5,14 +6,25 @@ import { AdjustLevels } from '../Svg/AdjustLevels';
 import ChangeLanguage from '../Svg/ChangeLanguage';
 import { ColorPalette } from '../Svg/ColorPalette';
 import './Settings.css';
+import Cogwheel from '../Svg/Cogwheel';
 
 const Settings = () => {
+
+    // For translations
+    const { t, i18n } = useTranslation();
+
+    const changeLanguage = (lang: string) => {
+        i18n.changeLanguage(lang);
+  };
 
     
   return (
     <div className="settings-container">
         <div className="settings-header">
-            <h1>Indstillinger</h1>
+            <span className='settings-header-content'>
+                <Cogwheel width={40} height={40} strokeColor="var(--text-color)"/>
+                <h2>Indstillinger</h2>
+            </span>
             <p>Her kan du ændre dine indstillinger.</p>
         </div>
 
@@ -29,11 +41,20 @@ const Settings = () => {
             <h3>Vælg sprog</h3>
             <div className="settings-item-option">
                 <ChangeLanguage width={30} height={30} strokeColor="var(--text-color)" />
-                <select name="language" id="language-select">
-                    <option value="danish">Dansk</option>
-                    <option value="english">Engelsk</option>
-                    <option value="german">Tysk</option>
-                    <option value="french">Fransk</option>
+                {/* Use the select onChange handler and language codes as values.
+                    onClick on <option> is unreliable; this ensures i18n.changeLanguage
+                    is called with a valid language code (e.g. 'da', 'en'). The select's
+                    value is bound to the currently active language so the UI reflects it. */}
+                <select
+                    name="language"
+                    id="language-select"
+                    value={i18n.language || 'en'}
+                    onChange={(e) => changeLanguage(e.target.value)}
+                >
+                    <option value="da">{t('settings.change_language.danish')}</option>
+                    <option value="en">{t('settings.change_language.english')}</option>
+                    <option value="de">{t('settings.change_language.german')}</option>
+                    <option value="fr">{t('settings.change_language.french')}</option>
                 </select>
             </div>
         </div>
@@ -68,6 +89,7 @@ const Settings = () => {
                 <ChangeAccentColor />
             </div>
         </div>
+
     </div>
   )
 }

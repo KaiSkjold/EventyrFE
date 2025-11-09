@@ -16,6 +16,14 @@
     margin-bottom: 0.5rem;
 }
 
+.settings-header-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
 .settings-item {
     display: flex;
     flex-direction: column;
@@ -25,6 +33,7 @@
 
 .settings-item-option {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 1rem;
@@ -35,4 +44,10 @@
     align-items: center;
     justify-content: space-between;
     gap: 0.5rem;
+}
+
+
+@media (max-width: 768px) {
+    /* Styles for medium screens */
+
 }

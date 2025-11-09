@@ -1,7 +1,6 @@
 .story-page-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
@@ -11,8 +10,6 @@
     align-items: center;
     justify-content: space-between;
     width: 80%;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
 }
 
 .page {
@@ -20,10 +17,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid var(--accent-color);
+    border: 3px solid var(--accent-color);
     border-radius: 10px;
     max-width: 80%;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 .story-page-back-link {
@@ -31,6 +28,7 @@
     flex-direction: row;
     align-items: center;
     gap: 0.5rem;
+    margin-top: 1rem;
 }
 
 .page-reading {
@@ -38,7 +36,10 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 100%;
+
+    h3 {
+        margin: 0.5rem 0;
+    }
 }
 
 .page-image {
@@ -103,8 +104,4 @@
 .story-page-end-footer h3 {
     text-align: center;
     margin: 0.5rem 0;
-}
-
-.story-page-end-footer {
-    padding-bottom: 4rem;
 }

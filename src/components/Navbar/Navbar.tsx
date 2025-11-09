@@ -2,8 +2,8 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Logo } from "../Svg/Logo";
 import { BurgerMenu } from "../Svg/BurgerMenu";
-import "./Navbar.css";
 import Button from "../ui/Button/Button";
+import "./Navbar.css";
 
 const Navbar = () => {
 
@@ -34,9 +34,11 @@ const Navbar = () => {
         </div>
 
         {/* Burger menu icon for mobile */}
-        <Button className="menu-icon" onClick={toggleMenu} borderStyle="no-border">
-            <BurgerMenu width={24} height={24} strokeColor="var(--text-color)" />
-        </Button>
+        <div className="menu-icon">
+          <Button onClick={toggleMenu} borderStyle="no-border" style={{ background: 'transparent' }}>
+              <BurgerMenu width={24} height={24} strokeColor="var(--text-color)" />
+          </Button>
+        </div>
 
       </div>
     </div>

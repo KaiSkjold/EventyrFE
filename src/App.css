@@ -4,19 +4,16 @@
   --bg-size: cover;
   --bg-position: center;
   --bg-repeat: no-repeat;
-  --bg-attachment: fixed;
-  /* TODO fix odd scale height vh % issue where it doesnt cover all */
-  --bg-height: 100%;
+  --bg-height: 100vh;
 }
 
 #root {
   display: flex;
   justify-content: center;
-  width: 100%;
   margin: 0;
   padding: 2rem;
   text-align: center;
-  height: var(--bg-height);
+  min-height: var(--bg-height);
   background-image: var(--bg-image);
   background-size: var(--bg-size);
   background-position: var(--bg-position);
@@ -29,7 +26,8 @@
   justify-content: center;
   background-color: var(--primary-color);
   border-radius: 20px;
-  height: 100%;
-  width: 80%;
+  min-width: 30rem;
+  max-width: 80%;
+  height: fit-content;
 }
 

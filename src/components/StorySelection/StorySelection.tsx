@@ -23,8 +23,8 @@ const StorySelection = () => {
   return (
     <div className='story-container'>
         {/* Page heading */}
-        <div className="title">
-            <h1>Vælg en historie at læse</h1>
+        <div className="story-selection-title">
+            <h2>Vælg en historie at læse</h2>
         </div>
 
         {/* Story cards */}

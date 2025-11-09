@@ -1,17 +1,20 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-
+import HttpBackend from "i18next-http-backend";
 
 i18n
+  .use(HttpBackend)
   .use(initReactI18next)
   .init({
-    resources: {
-    //   en: { translation: en },
-    //   fr: { translation: fr },
+    fallbackLng: "da",          // your default language
+    supportedLngs: ["da", "en", "fr", "de"], // optional but good practice
+    debug: true,                // set false for production
+    interpolation: {
+      escapeValue: false,       // React already protects from XSS
     },
-    lng: "en",
-    fallbackLng: "en",
-    interpolation: { escapeValue: false },
+    backend: {
+      loadPath: "/locales/{{lng}}/translation.json",
+    },
   });
 
 export default i18n;
