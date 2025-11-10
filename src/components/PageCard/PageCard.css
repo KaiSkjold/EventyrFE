@@ -17,6 +17,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
     border: 3px solid var(--accent-color);
     border-radius: 10px;
     max-width: 80%;
@@ -59,11 +60,22 @@
 }
 
 .page-bookmark {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    /* place the bookmark in the top-right of the page container */
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
-    width: 100%;
+    background: transparent;
+    border: none; /* button-friendly */
+    padding: 0.25rem;
+}
+
+.page-bookmark:focus {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
 }
 
 .page-choice-text-container {

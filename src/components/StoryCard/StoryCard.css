@@ -2,6 +2,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* make this a positioning context for the absolute .favorite */
+    position: relative;
     background-color: var(--secondary-color);
     border: 3px solid var(--accent-color);
     border-radius: 10px;
@@ -27,11 +29,21 @@
 }
 
 .favorite {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
-    width: 100%;
+    background: transparent;
+    border: none;
+    padding: 0.25rem;
+}
+
+.favorite:focus {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
 }
 
 .card-img {

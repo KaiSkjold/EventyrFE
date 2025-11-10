@@ -30,7 +30,14 @@ const StoryCard = ({ title, description, imgUrl, storyId }: StoryCardProps) => {
 
   return (
     <div className="card-container">
-      <span className="favorite" onClick={handleFavoriteClick}><Heart heartType={isFavorite}/></span>
+      <button
+        type="button"
+        className="favorite"
+        onClick={handleFavoriteClick}
+        aria-pressed={isFavorite === 'filled'}
+      >
+        <Heart heartType={isFavorite} />
+      </button>
       <div className="card-main">
         <div className="card-top">
           <h3>{title}</h3>

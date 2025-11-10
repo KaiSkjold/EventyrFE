@@ -75,7 +75,14 @@ const StoryPage = () => {
 
           {/* Page content */}
           <div className="page">
-            <span className="page-bookmark" onClick={handleBookmarkClick}><Bookmark width={30} height={30} bookmarkType={isBookmarked}/></span>
+            <button
+              type="button"
+              className="page-bookmark"
+              onClick={handleBookmarkClick}
+              aria-pressed={isBookmarked === 'filled'}
+            >
+              <Bookmark width={30} height={30} bookmarkType={isBookmarked} />
+            </button>
             <div className="page-reading">
               <div className="page-title"><h3>{pageState.currentPage?.title}</h3></div>
               <div 
