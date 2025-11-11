@@ -25,10 +25,6 @@ const StorySelection = () => {
 
   return (
     <div className='story-container'>
-        {/* Page heading TODO should i keep or use SVG??? */}
-        {/* <div className="story-selection-title">
-            <h2>Vælg en historie at læse</h2>
-        </div> */}
         {theme === 'dark' ? (
           <span>
             <img className='top-logo' src="src/assets/svg/Top2.svg"/>
@@ -38,6 +34,10 @@ const StorySelection = () => {
             <img className='top-logo' src="src/assets/svg/Top.svg"/>
           </span>
         )}
+
+  
+        <h1 className="story-selection-title">Vælg en historie at læse</h1>
+
 
         {/* Story cards */}
         <div className="story-cards">
