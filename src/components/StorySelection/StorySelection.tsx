@@ -27,11 +27,11 @@ const StorySelection = () => {
     <div className='story-container'>
         {theme === 'dark' ? (
           <span>
-            <img className='top-logo' src="src/assets/svg/Top2.svg"/>
+            <img className='top-logo' src="src/assets/svg/LogoBogLight.svg"/>
           </span>
         ) : (
           <span>
-            <img className='top-logo' src="src/assets/svg/Top.svg"/>
+            <img className='top-logo' src="src/assets/svg/LogoBogDark.svg"/>
           </span>
         )}
 

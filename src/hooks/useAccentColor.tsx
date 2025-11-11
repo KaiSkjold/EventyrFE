@@ -6,6 +6,7 @@ const useAccentColor = () => {
     { name: 'Dark Red', value: '#B10E0E' },
     { name: 'Royal Blue', value: '#3967D2' },
     { name: 'Jungle Green', value: '#2A9D8F' },
+    { name: 'Purple Bee', value: '#5D3FD3' },
     { name: 'Stinging Wasabi', value: '#A2E365' },
     { name: 'Soft Pink', value: '#E365C2' },
     { name: 'Cyan Aqua', value: '#22E0D7' },

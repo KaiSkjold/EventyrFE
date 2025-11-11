@@ -16,7 +16,7 @@ export function useStoryNavigation(
         // Get the next page in the story
         const pageData = story.pages.find((p) => p.pageId === nextPageId);
 
-        // If page not found, log an error and return
+        // If page not found error
         if (!pageData) {
             console.error('Page not found in story:', nextPageId);
             return;
