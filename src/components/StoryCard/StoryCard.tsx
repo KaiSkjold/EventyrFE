@@ -36,7 +36,7 @@ const StoryCard = ({ title, description, imgUrl, storyId }: StoryCardProps) => {
         onClick={handleFavoriteClick}
         aria-pressed={isFavorite === 'filled'}
       >
-        <Heart heartType={isFavorite} />
+        <Heart heartType={isFavorite} width={20} height={20} strokeColor="var(--text-color)"/>
       </button>
       <div className="card-main">
         <div className="card-top">

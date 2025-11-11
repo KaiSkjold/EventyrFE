@@ -4,6 +4,7 @@
   /* --font-family-default: 'Akaya Kanadaka', system-ui, Helvetica, Arial, sans-serif; */
   --font-family-default: system-ui, Helvetica, Arial, sans-serif;
   --font-family-dyslexic: 'Open-Dyslexic', sans-serif;
+  --font-family-love-ya-like-a-sister: 'Love Ya Like A Sister', system-ui;
   --font-family: var(--font-family-default);
   line-height: 1.5;
   font-weight: 400;

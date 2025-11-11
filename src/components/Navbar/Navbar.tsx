@@ -22,7 +22,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="logo">
             <Logo width={20} height={20} strokeColor="var(--text-color)" />
-            <p>Vælg Dit Eget Eventyr</p>
+            <p style={{ fontFamily: "var(--font-family-love-ya-like-a-sister)" }}>Vælg Dit Eget Eventyr</p>
           </div>
 
 

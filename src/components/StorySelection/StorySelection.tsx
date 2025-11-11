@@ -3,11 +3,14 @@ import StoryCard from '../StoryCard/StoryCard'
 import './StorySelection.css'
 import type { Story } from '../../services/api/Types'
 import { storiesApi } from '../../services/api/StoryApi'
+import { useTheme } from '../../hooks/useTheme'
 
 const StorySelection = () => {
 
   // set stories
   const [stories, setStories] = useState<Story[]>([])
+
+  const { theme } = useTheme()
 
   useEffect(() => {
     const fetchStories = async () => {
@@ -22,10 +25,19 @@ const StorySelection = () => {
 
   return (
     <div className='story-container'>
-        {/* Page heading */}
-        <div className="story-selection-title">
+        {/* Page heading TODO should i keep or use SVG??? */}
+        {/* <div className="story-selection-title">
             <h2>Vælg en historie at læse</h2>
-        </div>
+        </div> */}
+        {theme === 'dark' ? (
+          <span>
+            <img className='top-logo' src="src/assets/svg/Top2.svg"/>
+          </span>
+        ) : (
+          <span>
+            <img className='top-logo' src="src/assets/svg/Top.svg"/>
+          </span>
+        )}
 
         {/* Story cards */}
         <div className="story-cards">
