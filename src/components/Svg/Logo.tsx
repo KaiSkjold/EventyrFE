@@ -22,7 +22,7 @@ export const Logo: React.FC<LogoProps> = ({ width = 40, height = 40, fillColor =
         20.891 4.54601C21 4.75992 21 5.03995 21 5.6V16.4C21 16.9601 21 17.2401 20.891 17.454C20.7951 17.6422 20.6422 17.7951 
         20.454 17.891C20.2401 18 19.9601 18 19.4 18H16.4533C15.9131 18 15.643 18 15.3819 18.0466C15.15 18.0879 14.9239 18.1563 
         14.7081 18.2506C14.465 18.3567 14.2402 18.5065 13.7908 18.8062L12 20" 
-        stroke={strokeColor} stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        stroke={strokeColor} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
 
   );
