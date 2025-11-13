@@ -70,7 +70,7 @@ const StoryPage = () => {
             </Link>
           <div className="story-page-header">
             <h3 className="story-page-story-title">{pageState.story.title}</h3>
-            <Button borderStyle='no-border' onClick={() => setIsSettingsOpen(true)}><Cogwheel width={20} height={20} strokeColor='var(--text-color)'/></Button>
+            <Button data-testid="settings-button" borderStyle='no-border' onClick={() => setIsSettingsOpen(true)}><Cogwheel width={20} height={20} strokeColor='var(--text-color)'/></Button>
           </div>
 
           {/* Page content */}
@@ -84,7 +84,7 @@ const StoryPage = () => {
               <Bookmark width={30} height={30} bookmarkType={isBookmarked} />
             </button>
             <div className="page-reading">
-              <div className="page-title"><h3>{pageState.currentPage?.title}</h3></div>
+              <div className="page-title"><h3 data-testid="page-title">{pageState.currentPage?.title}</h3></div>
               <div 
                 className="page-image" 
                 style={{ backgroundImage: `url(${pageState.currentPage?.imgUrl})` }} 
@@ -101,6 +101,7 @@ const StoryPage = () => {
             <div className="page-actions">
               {pageState.currentPage?.outgoingPageLinks?.map((link) =>
                 <Button
+                  data-testid="story-action"
                   key={link.pageLinkId}
                   borderStyle='with-border'
                   onClick={() => handleStoryChoice(link.toPageId)}

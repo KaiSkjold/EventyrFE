@@ -29,7 +29,7 @@ const StoryCard = ({ title, description, imgUrl, storyId }: StoryCardProps) => {
   }
 
   return (
-    <div className="card-container">
+    <div className="card-container" data-testid="story-card">
       <button
         type="button"
         className="favorite"
@@ -47,7 +47,7 @@ const StoryCard = ({ title, description, imgUrl, storyId }: StoryCardProps) => {
             style={{ backgroundImage: `url(${imgUrl})` }}
             />
         <div className={`card-description ${isExpanded ? 'expanded' : ''}`}><p onClick={toggleDescription}>{description}</p></div>
-  <Button borderStyle='with-border' onClick={() => navigate(`/story/${storyId}`)}>Læs historie</Button>
+  <Button data-testid="read-story-button" borderStyle='with-border' onClick={() => navigate(`/story/${storyId}`)}>Læs historie</Button>
       </div>
     </div>
   )
