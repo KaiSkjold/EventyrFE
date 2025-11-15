@@ -6,7 +6,15 @@ import fs from "fs";
 import fetch from "node-fetch";
 
 // Locales the project supports and for which we'll pull translations.
-const locales = ["da", "en", "fr", "de"];
+// Added Danish variants for reading levels so each can have its own translation file.
+// Some Localise locale slugs differ from our internal language codes (e.g. Localise uses
+// 'da-DK' while the app uses 'da'). Use `localeMap` to map internal codes to Localise slugs.
+const locales = ["da", "da-dyslexic", "da-interm", "da-advanced", "en", "fr", "de"];
+
+// Map internal locale -> Localise slug when they differ.
+const localeMap = {
+  'da': 'da-DK'
+};
 
 // The Localise API key must be provided via an environment variable.
 // The script exits early with code 1 if it's not set.
@@ -20,10 +28,14 @@ if (!apiKey) {
 
 // For each locale, fetch the exported JSON and write it to the public folder.
 for (const locale of locales) {
-  // Export endpoint for Localise.biz in the i18next JSON format.
-  const url = `https://localise.biz/api/export/locale/${locale}.json?format=i18next`;
+  // Determine the slug to request from Localise, falling back to the internal code.
+  const slug = localeMap[locale] || locale;
 
-  // Destination directory and file for the downloaded translations.
+  // Export endpoint for Localise.biz in the i18next JSON format.
+  const url = `https://localise.biz/api/export/locale/${slug}.json?format=i18next`;
+
+  // Destination directory and file for the downloaded translations. We always write
+  // to the internal folder name (e.g. write Localise 'da-DK' into './public/locales/da').
   const outDir = `./public/locales/${locale}`;
   const outFile = `${outDir}/translation.json`;
 
@@ -37,14 +49,18 @@ for (const locale of locales) {
   // Fetch the resource. This is non-blocking and will run concurrently for each locale.
   // We check `res.ok` and call res.json() to parse the body as JSON.
   fetch(url, { headers: { Authorization: authHeader } })
-    .then(res => {
-      if (!res.ok) throw new Error(`Failed ${res.status}`);
+    .then(async (res) => {
+      if (!res.ok) {
+        // Include response body to make 4xx/5xx diagnostics actionable.
+        const body = await res.text();
+        throw new Error(`Failed ${res.status} for slug=${slug}: ${body}`);
+      }
       return res.json();
     })
     .then(data => {
       // Write a human-readable JSON file with 2-space indentation so it's easy to review in source control.
       fs.writeFileSync(outFile, JSON.stringify(data, null, 2));
-      console.log(`Updated locale: ${locale}`);
+      console.log(`Updated locale: ${locale} (fetched slug=${slug})`);
     })
     .catch(err => {
       // Catch and report errors for particular locale without aborting other downloads.

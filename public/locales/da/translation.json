@@ -4,7 +4,113 @@
       "danish": "Dansk",
       "french": "Fransk",
       "german": "Tysk",
-      "english": "Engelsk"
+      "english": "Engelsk",
+      "danish_dyslexic": "Dansk ordblind",
+      "danish_intermediate": "Dansk øvet",
+      "danish_advanced": "Dansk avanceret"
+    }
+  },
+  "story_one": {
+    "story_cover": {
+      "title": "Den Fortryllede Have",
+      "description": "Et magisk eventyr, hvor en ung gartner opdager en mystisk fortryllet have med talende dyr, magiske blomster og gamle hemmeligheder, der venter på at blive afsløret."
+    },
+    "assets": {
+      "cover_image_string": "/assets/storyCovers/magicGarden.jpg"
+    },
+    "page_one": {
+      "title": "Den Mystiske Haveport",
+      "description": "Mens du går gennem skoven, opdager du en udsmykket gylden port dækket af glødende vinranker...",
+      "image": "/assets/storyOneImages/golden-gate.jpg"
+    },
+    "page_two": {
+      "title": "Den Syngende Blåfugls Sti",
+      "description": "Du følger den melodiske blåfugl dybere ind i haven...",
+      "image": "https://picsum.photos/200/200?random=21"
+    },
+    "page_three": {
+      "title": "Den Kloge Kanins Gåde",
+      "description": "Den hvide kanin justerer sine små briller og siger... \"Velkommen, min unge ven! Jeg er vogteren af havens hemmeligheder\"",
+      "image": "https://picsum.photos/200/200?random=22"
+    },
+    "page_four": {
+      "title": "Haven med Gyldne Blomster",
+      "description": "Du nærmer dig de gyldne blomster, og de begynder at kime som klokker i vinden. Pludselig ser du en lille fe...",
+      "image": "https://picsum.photos/200/200?random=23"
+    },
+    "page_five": {
+      "title": "Gamle Minders Træ",
+      "description": "Da du rører ved det massive egetræ, fyldes dit sind af visioner...",
+      "image": "https://picsum.photos/200/200?random=24"
+    },
+    "page_six": {
+      "title": "Reflektionens Sø",
+      "description": "Da du træder på den safirblå åkandeblad, synker du blidt ned i det krystalklare vand...",
+      "image": "https://picsum.photos/200/200?random=25"
+    },
+    "page_seven": {
+      "title": "Lunden af Voksende Ting",
+      "description": "Det smaragdgrønne åkandeblad fører dig til en lund, hvor alt vokser med utrolig hastighed...",
+      "image": "https://picsum.photos/200/200?random=26"
+    },
+    "page_eight": {
+      "title": "De Modige Hjerters Kammer",
+      "description": "Det rubinrøde åkandeblad bringer dig til en stor sal fyldt med rustninger og våben...",
+      "image": "https://picsum.photos/200/200?random=27"
+    },
+    "page_nine": {
+      "title": "Vogteren af Den Fortryllede Have",
+      "description": "Du vælger at blive havens nye vogter...",
+      "image": "https://picsum.photos/200/200?random=28"
+    },
+    "page_ten": {
+      "title": "Den Store Helbreder",
+      "description": "Du vier dit liv til at hele jordens sår...",
+      "image": "https://picsum.photos/200/200?random=29"
+    },
+    "page_eleven": {
+      "title": "Retfærdighedens Forkæmper",
+      "description": "Bevæbnet med mod og føniksens velsignelse vender du tilbage til verden som en beskytter.",
+      "image": "https://picsum.photos/200/200?random=30"
+    },
+    "page_link": {
+      "page_one": {
+        "choice_text_one": "Brug den sølvnøgle til at låse porten op",
+        "choice_text_two": "Råb for at se om nogen er derinde",
+        "choice_text_three": "Undersøg de glødende gyldne blomster",
+        "choice_text_four": "Rør ved det gamle træ"
+      },
+      "page_two": {
+        "choice_text_one": "Træd på det safirblå åkandeblad",
+        "choice_text_two": "Træd på det smaragdgrønne åkandeblad",
+        "choice_text_three": "Træd på det rubinrøde åkandeblad"
+      },
+      "page_three": {
+        "choice_text_one": "Gå ind i Krystalhulen",
+        "choice_text_two": "Gå ind i De Hviskende Skove",
+        "choice_text_three": "Navigér i Rosenlabyrinten"
+      },
+      "page_four": {
+        "choice_text_one": "Ønsk efter visdom",
+        "choice_text_two": "Ønsk efter mod",
+        "choice_text_three": "Ønsk efter godhed"
+      },
+      "page_five": {
+        "choice_text_one": "Tag imod vogterrollen",
+        "choice_text_two": "Bring magien ud i verden"
+      },
+      "page_six": {
+        "choice_text_one": "Bliv som lærer",
+        "choice_text_two": "Vend tilbage til verden"
+      },
+      "page_seven": {
+        "choice_text_one": "Helbred hele jorden",
+        "choice_text_two": "Hjælp det lokale fællesskab"
+      },
+      "page_eight": {
+        "choice_text_one": "Bekæmp uretfærdighed",
+        "choice_text_two": "Træn beskyttere"
+      }
     }
   }
 }

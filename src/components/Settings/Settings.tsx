@@ -2,11 +2,11 @@ import { useTranslation } from 'react-i18next';
 import ChangeAccentColor from '../ChangeAccentColor/ChangeAccentColor';
 import ChangeTheme from '../ChangeTheme/ChangeTheme'
 import FontToggle from '../FontToggle/FontToggle'
-import { AdjustLevels } from '../Svg/AdjustLevels';
 import ChangeLanguage from '../Svg/ChangeLanguage';
 import { ColorPalette } from '../Svg/ColorPalette';
 import './Settings.css';
 import Cogwheel from '../Svg/Cogwheel';
+import AdjustLevels from '../Svg/AdjustLevels';
 
 const Settings = () => {
 
@@ -17,6 +17,15 @@ const Settings = () => {
         i18n.changeLanguage(lang);
   };
 
+    // Normalize certain region slugs (e.g. 'da-DK') returned by the browser
+    // so the select's `value` always matches one of the option values.
+    const normalizeForSelect = (l?: string) => {
+        if (!l) return 'en';
+        const lower = l.toLowerCase();
+        if (lower === 'da-dk') return 'da';
+        return lower;
+    };
+    const selectValue = normalizeForSelect(i18n.language || 'en');
     
   return (
     <div className="settings-container">
@@ -41,17 +50,16 @@ const Settings = () => {
             <h3>Vælg sprog</h3>
             <div className="settings-item-option">
                 <ChangeLanguage width={30} height={30} strokeColor="var(--text-color)" />
-                {/* Use the select onChange handler and language codes as values.
-                    onClick on <option> is unreliable; this ensures i18n.changeLanguage
-                    is called with a valid language code (e.g. 'da', 'en'). The select's
-                    value is bound to the currently active language so the UI reflects it. */}
                 <select
                     name="language"
                     id="language-select"
-                    value={i18n.language || 'en'}
+                    value={selectValue}
                     onChange={(e) => changeLanguage(e.target.value)}
                 >
+                    <option value="da-dyslexic">{t('settings.change_language.danish_dyslexic')}</option>
                     <option value="da">{t('settings.change_language.danish')}</option>
+                    <option value="da-interm">{t('settings.change_language.danish_intermediate')}</option>
+                    <option value="da-advanced">{t('settings.change_language.danish_advanced')}</option>
                     <option value="en">{t('settings.change_language.english')}</option>
                     <option value="de">{t('settings.change_language.german')}</option>
                     <option value="fr">{t('settings.change_language.french')}</option>
@@ -59,6 +67,7 @@ const Settings = () => {
             </div>
         </div>
 
+        
         {/* TODO Level settings */}
         <div className="settings-item">
             <h3>Vælg niveau</h3>

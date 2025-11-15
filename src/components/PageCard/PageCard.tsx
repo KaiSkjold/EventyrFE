@@ -7,6 +7,8 @@ import useBackgroundImage from '../../hooks/useBackgroundImage';
 import { useStoryNavigation } from '../../hooks/useStoryNavigation';
 import { useStoryAndFirstPage } from '../../hooks/useStoryAndFirstPage';
 import { useStoryPageStates } from '../../hooks/useStoryPageState';
+import { useTranslation } from 'react-i18next';
+import { isLikelyUrl, isTranslationKeyCandidate, mapDbKeyToLocaleKey } from '../../utils/helpers';
 import { Cogwheel } from '../Svg/Cogwheel';
 import SettingsModal from '../SettingsModal/SettingsModal';
 import ArrowNarrowLeft from '../Svg/ArrowNarrowLeft';
@@ -29,6 +31,16 @@ const StoryPage = () => {
   // Use state hook to determine current state
   const pageState = useStoryPageStates(story, currentPage, loading, error);
 
+  const { t } = useTranslation();
+
+  const translateIfKey = (s?: string) => {
+    if (!s) return s || '';
+    if (!isTranslationKeyCandidate(s)) return s;
+    const keyCandidate = mapDbKeyToLocaleKey(s);
+    const translated = t(keyCandidate);
+    return translated === keyCandidate ? s : translated;
+  };
+
   // bookmark state
   const [isBookmarked, setIsBookmarked] = useState<'filled' | 'outlined'>('outlined');
   const handleBookmarkClick = () => {
@@ -39,7 +51,7 @@ const StoryPage = () => {
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
 
   // set background image from cover image of story
-  useBackgroundImage(story?.imgUrl);
+  useBackgroundImage(translateIfKey(story?.imgUrl));
 
   // Render loading, error, or page content based on state as per hook in a switch case
   switch (pageState.type) {
@@ -69,7 +81,7 @@ const StoryPage = () => {
               <p>Vælg en anden historie at læse?</p>
             </Link>
           <div className="story-page-header">
-            <h3 className="story-page-story-title">{pageState.story.title}</h3>
+            <h3 className="story-page-story-title">{translateIfKey(pageState.story?.title)}</h3>
             <Button data-testid="settings-button" borderStyle='no-border' onClick={() => setIsSettingsOpen(true)}><Cogwheel width={20} height={20} strokeColor='var(--text-color)'/></Button>
           </div>
 
@@ -84,13 +96,13 @@ const StoryPage = () => {
               <Bookmark width={30} height={30} bookmarkType={isBookmarked} />
             </button>
             <div className="page-reading">
-              <div className="page-title"><h3 data-testid="page-title">{pageState.currentPage?.title}</h3></div>
+              <div className="page-title"><h3 data-testid="page-title">{translateIfKey(pageState.currentPage?.title)}</h3></div>
               <div 
                 className="page-image" 
-                style={{ backgroundImage: `url(${pageState.currentPage?.imgUrl})` }} 
+                style={{ backgroundImage: `url(${isLikelyUrl(pageState.currentPage?.imgUrl || '') ? pageState.currentPage?.imgUrl : translateIfKey(pageState.currentPage?.imgUrl)})` }} 
                 />
               <div className="page-description"><p>
-                {pageState.currentPage?.description}
+                {translateIfKey(pageState.currentPage?.description)}
               </p></div>
             </div>
           </div>
@@ -106,7 +118,7 @@ const StoryPage = () => {
                   borderStyle='with-border'
                   onClick={() => handleStoryChoice(link.toPageId)}
                   >
-                    {link.choiceText}
+                    {translateIfKey(link.choiceText)}
                 </Button>
               )}
             </div>

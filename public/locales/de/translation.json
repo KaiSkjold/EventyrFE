@@ -4,7 +4,113 @@
       "danish": "Dänisch",
       "french": "Französisch",
       "german": "Deutsch",
-      "english": "Englisch"
+      "english": "Englisch",
+      "danish_dyslexic": "",
+      "danish_intermediate": "",
+      "danish_advanced": ""
+    }
+  },
+  "story_one": {
+    "story_cover": {
+      "title": "",
+      "description": ""
+    },
+    "assets": {
+      "cover_image_string": ""
+    },
+    "page_one": {
+      "title": "",
+      "description": "",
+      "image": ""
+    },
+    "page_two": {
+      "title": "",
+      "description": "",
+      "image": ""
+    },
+    "page_three": {
+      "title": "",
+      "description": "",
+      "image": ""
+    },
+    "page_four": {
+      "title": "",
+      "description": "",
+      "image": ""
+    },
+    "page_five": {
+      "title": "",
+      "description": "",
+      "image": ""
+    },
+    "page_six": {
+      "title": "",
+      "description": "",
+      "image": ""
+    },
+    "page_seven": {
+      "title": "",
+      "description": "",
+      "image": ""
+    },
+    "page_eight": {
+      "title": "",
+      "description": "",
+      "image": ""
+    },
+    "page_nine": {
+      "title": "",
+      "description": "",
+      "image": ""
+    },
+    "page_ten": {
+      "title": "",
+      "description": "",
+      "image": ""
+    },
+    "page_eleven": {
+      "title": "",
+      "description": "",
+      "image": ""
+    },
+    "page_link": {
+      "page_one": {
+        "choice_text_one": "",
+        "choice_text_two": "",
+        "choice_text_three": "",
+        "choice_text_four": ""
+      },
+      "page_two": {
+        "choice_text_one": "",
+        "choice_text_two": "",
+        "choice_text_three": ""
+      },
+      "page_three": {
+        "choice_text_one": "",
+        "choice_text_two": "",
+        "choice_text_three": ""
+      },
+      "page_four": {
+        "choice_text_one": "",
+        "choice_text_two": "",
+        "choice_text_three": ""
+      },
+      "page_five": {
+        "choice_text_one": "",
+        "choice_text_two": ""
+      },
+      "page_six": {
+        "choice_text_one": "",
+        "choice_text_two": ""
+      },
+      "page_seven": {
+        "choice_text_one": "",
+        "choice_text_two": ""
+      },
+      "page_eight": {
+        "choice_text_one": "",
+        "choice_text_two": ""
+      }
     }
   }
 }

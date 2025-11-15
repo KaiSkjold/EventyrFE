@@ -4,7 +4,113 @@
       "danish": "Danish",
       "french": "French",
       "german": "German",
-      "english": "English"
+      "english": "English",
+      "danish_dyslexic": "Danish Dyslexic",
+      "danish_intermediate": "Danish intermediate",
+      "danish_advanced": "Danish advanced"
+    }
+  },
+  "story_one": {
+    "story_cover": {
+      "title": "The Enchanted Garden",
+      "description": "A magical fairy tale adventure where a young gardener discovers a mysterious enchanted garden with talking animals, magical flowers, and ancient secrets waiting to be uncovered."
+    },
+    "assets": {
+      "cover_image_string": "/assets/storyCovers/magicGarden.jpg"
+    },
+    "page_one": {
+      "title": "The Mysterious Garden Gate",
+      "description": "While walking through the forest, you discover an ornate golden gate covered in glowing vines. Through the bars, you see the most beautiful garden you've ever imagined. A small silver key hangs from a nearby branch. What do you do?",
+      "image": "assets/storyOneImages/golden-gate.jpg"
+    },
+    "page_two": {
+      "title": "The Singing Bluebird's Path",
+      "description": "You follow the melodious bluebird deeper into the garden. It leads you to a shimmering pond where three magical lily pads float...",
+      "image": "https://picsum.photos/200/200?random=21"
+    },
+    "page_three": {
+      "title": "The Wise Rabbit''s Riddle",
+      "description": "The white rabbit adjusts his tiny spectacles and says, \"Welcome, young one! I am the keeper of garden secrets...\"",
+      "image": "https://picsum.photos/200/200?random=22"
+    },
+    "page_four": {
+      "title": "The Garden of Golden Blooms",
+      "description": "You approach the golden flowers, and they begin to chime like bells in the wind. Suddenly, a tiny fairy appears...",
+      "image": "https://picsum.photos/200/200?random=23"
+    },
+    "page_five": {
+      "title": "The Ancient Memory Tree",
+      "description": "As you touch the massive oak tree, visions flood your mind...",
+      "image": "https://picsum.photos/200/200?random=24"
+    },
+    "page_six": {
+      "title": "The Pool of Reflection",
+      "description": "Stepping on the sapphire lily pad, you sink gently into the crystal-clear water...",
+      "image": "https://picsum.photos/200/200?random=25"
+    },
+    "page_seven": {
+      "title": "The Grove of Growing Things",
+      "description": "The emerald lily pad transports you to a grove where everything grows at incredible speed...",
+      "image": "https://picsum.photos/200/200?random=26"
+    },
+    "page_eight": {
+      "title": "The Chamber of Brave Hearts",
+      "description": "The ruby lily pad brings you to a grand chamber filled with the armor and weapons of ancient heroes...",
+      "image": "https://picsum.photos/200/200?random=27"
+    },
+    "page_nine": {
+      "title": "Guardian of the Enchanted Garden",
+      "description": "You choose to become the garden''s new guardian...",
+      "image": "https://picsum.photos/200/200?random=28"
+    },
+    "page_ten": {
+      "title": "The Great Healer",
+      "description": "You dedicate your life to healing the earth's wounded places...",
+      "image": "https://picsum.photos/200/200?random=29"
+    },
+    "page_eleven": {
+      "title": "Champion of Justice",
+      "description": "Armed with courage and the blessing of the phoenix, you return to the world as a protector...",
+      "image": "https://picsum.photos/200/200?random=30"
+    },
+    "page_link": {
+      "page_one": {
+        "choice_text_one": "Use the silver key to unlock the gate",
+        "choice_text_two": "Call out to see if anyone is inside",
+        "choice_text_three": "Examine the glowing golden flowers",
+        "choice_text_four": "Touch the ancient tree"
+      },
+      "page_two": {
+        "choice_text_one": "Step on the sapphire lily pad",
+        "choice_text_two": "Step on the emerald lily pad",
+        "choice_text_three": "Step on the ruby lily pad"
+      },
+      "page_three": {
+        "choice_text_one": "Enter the Crystal Cave",
+        "choice_text_two": "Walk into the Whispering Woods",
+        "choice_text_three": "Navigate the Rose Maze"
+      },
+      "page_four": {
+        "choice_text_one": "Wish for wisdom",
+        "choice_text_two": "Wish for courage",
+        "choice_text_three": "Wish for kindness"
+      },
+      "page_five": {
+        "choice_text_one": "Accept guardian role",
+        "choice_text_two": "Take magic to the world"
+      },
+      "page_six": {
+        "choice_text_one": "Stay as teacher",
+        "choice_text_two": "Return to world"
+      },
+      "page_seven": {
+        "choice_text_one": "Heal entire earth",
+        "choice_text_two": "Help local community"
+      },
+      "page_eight": {
+        "choice_text_one": "Fight injustice",
+        "choice_text_two": "Train protectors"
+      }
     }
   }
 }
