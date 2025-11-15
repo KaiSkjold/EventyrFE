@@ -21,47 +21,47 @@
     "page_one": {
       "title": "The Mysterious Garden Gate",
       "description": "While walking through the forest, you discover an ornate golden gate covered in glowing vines. Through the bars, you see the most beautiful garden you've ever imagined. A small silver key hangs from a nearby branch. What do you do?",
-      "image": "assets/storyOneImages/golden-gate.jpg"
+      "image": "/assets/storyOneImages/golden-gate.jpg"
     },
     "page_two": {
       "title": "The Singing Bluebird's Path",
       "description": "You follow the melodious bluebird deeper into the garden. It leads you to a shimmering pond where three magical lily pads float...",
-      "image": "https://picsum.photos/200/200?random=21"
+      "image": "/assets/storyOneImages/blue-bird.jpg"
     },
     "page_three": {
       "title": "The Wise Rabbit''s Riddle",
       "description": "The white rabbit adjusts his tiny spectacles and says, \"Welcome, young one! I am the keeper of garden secrets...\"",
-      "image": "https://picsum.photos/200/200?random=22"
+      "image": "/assets/storyOneImages/guardian-of-the-forest.jpg"
     },
     "page_four": {
       "title": "The Garden of Golden Blooms",
       "description": "You approach the golden flowers, and they begin to chime like bells in the wind. Suddenly, a tiny fairy appears...",
-      "image": "https://picsum.photos/200/200?random=23"
+      "image": "/assets/storyOneImages/golden-flowers.jpg"
     },
     "page_five": {
       "title": "The Ancient Memory Tree",
       "description": "As you touch the massive oak tree, visions flood your mind...",
-      "image": "https://picsum.photos/200/200?random=24"
+      "image": "/assets/storyOneImages/old-memory-tree.jpg"
     },
     "page_six": {
       "title": "The Pool of Reflection",
       "description": "Stepping on the sapphire lily pad, you sink gently into the crystal-clear water...",
-      "image": "https://picsum.photos/200/200?random=25"
+      "image": "/assets/storyOneImages/sapphire-lily-pad.jpg"
     },
     "page_seven": {
       "title": "The Grove of Growing Things",
       "description": "The emerald lily pad transports you to a grove where everything grows at incredible speed...",
-      "image": "https://picsum.photos/200/200?random=26"
+      "image": "/assets/storyOneImages/emerald-lily-pad.jpg"
     },
     "page_eight": {
       "title": "The Chamber of Brave Hearts",
       "description": "The ruby lily pad brings you to a grand chamber filled with the armor and weapons of ancient heroes...",
-      "image": "https://picsum.photos/200/200?random=27"
+      "image": "/assets/storyOneImages/ruby-lily-pad.jpg"
     },
     "page_nine": {
       "title": "Guardian of the Enchanted Garden",
       "description": "You choose to become the garden''s new guardian...",
-      "image": "https://picsum.photos/200/200?random=28"
+      "image": "/assets/storyOneImages/you-guardian.jpg"
     },
     "page_ten": {
       "title": "The Great Healer",
@@ -71,7 +71,7 @@
     "page_eleven": {
       "title": "Champion of Justice",
       "description": "Armed with courage and the blessing of the phoenix, you return to the world as a protector...",
-      "image": "https://picsum.photos/200/200?random=30"
+      "image": "/assets/storyOneImages/knight-of-justice.jpg"
     },
     "page_link": {
       "page_one": {
