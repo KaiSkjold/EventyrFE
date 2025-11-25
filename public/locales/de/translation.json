@@ -5,111 +5,111 @@
       "french": "Französisch",
       "german": "Deutsch",
       "english": "Englisch",
-      "danish_dyslexic": "",
-      "danish_intermediate": "",
-      "danish_advanced": ""
+      "danish_dyslexic": "Dänisch Dyslexie",
+      "danish_intermediate": "Dänisch mittleres",
+      "danish_advanced": "Dänisch Fortgeschrittenes"
     }
   },
   "story_one": {
     "story_cover": {
-      "title": "",
-      "description": ""
+      "title": "Der Verzauberte Garten",
+      "description": "Ein magisches Abenteuer, in dem ein junger Gärtner einen geheimnisvollen, verzauberten Garten entdeckt – voller sprechender Tiere, magischer Blumen und alter Geheimnisse, die darauf warten, enthüllt zu werden."
     },
     "assets": {
-      "cover_image_string": ""
+      "cover_image_string": "/assets/storyCovers/magicGarden.jpg"
     },
     "page_one": {
-      "title": "",
-      "description": "",
-      "image": ""
+      "title": "Das Mystische Tor",
+      "description": "Du gehst durch den Wald und siehst ein goldenes Tor, bedeckt von leuchtenden Rankpflanzen. Etwas dahinter ruft nach dir.",
+      "image": "/assets/storyOneImages/golden-gate.jpg"
     },
     "page_two": {
-      "title": "",
-      "description": "",
-      "image": ""
+      "title": "Der Weg des Blauen Schmetterlings",
+      "description": "Du folgst dem singenden blauen Schmetterling weiter in den Garten hinein, wo die Luft vor Magie vibriert.",
+      "image": "/assets/storyOneImages/blue-bird.jpg"
     },
     "page_three": {
-      "title": "",
-      "description": "",
-      "image": ""
+      "title": "Das Rätsel des Weisen Kaninchens",
+      "description": "Das weiße Kaninchen mit der kleinen Brille lächelt listig und bittet dich, ein altes Rätsel zu lösen.",
+      "image": "/assets/storyOneImages/guardian-of-the-forest.jpg"
     },
     "page_four": {
-      "title": "",
-      "description": "",
-      "image": ""
+      "title": "Der Garten der Goldenen Blumen",
+      "description": "Die goldenen Blumen klingen wie kleine Glocken, als du näher kommst. Du spürst eine warme Kraft in der Luft.",
+      "image": "/assets/storyOneImages/golden-flowers.jpg"
     },
     "page_five": {
-      "title": "",
-      "description": "",
-      "image": ""
+      "title": "Der Baum der Erinnerungen",
+      "description": "Der Baum der Erinnerungen",
+      "image": "/assets/storyOneImages/old-memory-tree.jpg"
     },
     "page_six": {
-      "title": "",
-      "description": "",
-      "image": ""
+      "title": "Der See der Reflexion",
+      "description": "Du trittst auf ein saphirblaues Seerosenblatt und spürst, wie das Wasser dich sanft umhüllt.",
+      "image": "/assets/storyOneImages/sapphire-lily-pad.jpg"
     },
     "page_seven": {
-      "title": "",
-      "description": "",
-      "image": ""
+      "title": "Die Lichtung des Lebens",
+      "description": "Das grüne Seerosenblatt führt dich zu einer üppigen Lichtung, in der Pflanzen direkt vor deinen Augen wachsen.",
+      "image": "/assets/storyOneImages/emerald-lily-pad.jpg"
     },
     "page_eight": {
-      "title": "",
-      "description": "",
-      "image": ""
+      "title": "Die Kammer des Mutes",
+      "description": "Das rote Seerosenblatt bringt dich in einen Saal voller alter Waffen und Erinnerungen an Helden.",
+      "image": "/assets/storyOneImages/ruby-lily-pad.jpg"
     },
     "page_nine": {
-      "title": "",
-      "description": "",
-      "image": ""
+      "title": "Der Hüter des Gartens",
+      "description": "Du entscheidest dich, der Beschützer des Gartens zu werden und seine Geheimnisse zu bewahren.",
+      "image": "/assets/storyOneImages/you-guardian.jpg"
     },
     "page_ten": {
-      "title": "",
-      "description": "",
-      "image": ""
+      "title": "Der Heiler der Erde",
+      "description": "Du versprichst, der Natur zu helfen, wieder zu wachsen und zu heilen.",
+      "image": "/assets/storyOneImages/great-healer.jpg"
     },
     "page_eleven": {
-      "title": "",
-      "description": "",
-      "image": ""
+      "title": "Der Kämpfer für Gerechtigkeit",
+      "description": "Erfüllt von Mut und der Kraft des Phönix kämpfst du für das Gute.",
+      "image": "/assets/storyOneImages/knight-of-justice.jpg"
     },
     "page_link": {
       "page_one": {
-        "choice_text_one": "",
-        "choice_text_two": "",
-        "choice_text_three": "",
-        "choice_text_four": ""
+        "choice_text_one": "Benutze den Silberschlüssel, um das Tor aufzuschließen",
+        "choice_text_two": "Rufe laut, um zu hören, ob jemand antwortet",
+        "choice_text_three": "Untersuche die goldenen Blumen, die leuchten",
+        "choice_text_four": "Berühre den alten, knorrigen Baum"
       },
       "page_two": {
-        "choice_text_one": "",
-        "choice_text_two": "",
-        "choice_text_three": ""
+        "choice_text_one": "Tritt auf das saphirblaue Seerosenblatt",
+        "choice_text_two": "Tritt auf das smaragdgrüne Seerosenblatt",
+        "choice_text_three": "Tritt auf das rubinrote Seerosenblatt"
       },
       "page_three": {
-        "choice_text_one": "",
-        "choice_text_two": "",
-        "choice_text_three": ""
+        "choice_text_one": "Geh in die Kristallhöhle",
+        "choice_text_two": "Geh in den Flüsterwald",
+        "choice_text_three": "Navigiere durch das Rosenlabyrinth"
       },
       "page_four": {
-        "choice_text_one": "",
-        "choice_text_two": "",
-        "choice_text_three": ""
+        "choice_text_one": "Wünsche dir Weisheit",
+        "choice_text_two": "Wünsche dir Mut",
+        "choice_text_three": "Wünsche dir Güte"
       },
       "page_five": {
-        "choice_text_one": "",
-        "choice_text_two": ""
+        "choice_text_one": "Nimm die Rolle des Wächters an",
+        "choice_text_two": "Bring die Magie hinaus in die Welt"
       },
       "page_six": {
-        "choice_text_one": "",
-        "choice_text_two": ""
+        "choice_text_one": "Werde der Lehrer",
+        "choice_text_two": "Kehre in die gewöhnliche Welt zurück"
       },
       "page_seven": {
-        "choice_text_one": "",
-        "choice_text_two": ""
+        "choice_text_one": "Hilf, die Erde zu heilen",
+        "choice_text_two": "Unterstütze die Gemeinschaft um dich herum"
       },
       "page_eight": {
-        "choice_text_one": "",
-        "choice_text_two": ""
+        "choice_text_one": "Unterstütze die Gemeinschaft um dich herum",
+        "choice_text_two": "Trainiere diejenigen, die neue Beschützer werden sollen"
       }
     }
   }

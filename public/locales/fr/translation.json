@@ -5,111 +5,111 @@
       "french": "Français",
       "german": "Allemand",
       "english": "Anglais",
-      "danish_dyslexic": "",
-      "danish_intermediate": "",
-      "danish_advanced": ""
+      "danish_dyslexic": "danois dyslexie",
+      "danish_intermediate": "danois intermédiaire",
+      "danish_advanced": "danois avancé"
     }
   },
   "story_one": {
     "story_cover": {
-      "title": "",
-      "description": ""
+      "title": "Le Jardin Enchanté",
+      "description": "Une aventure magique où un jeune jardinier découvre un mystérieux jardin enchanté, peuplé d’animaux parlants, de fleurs magiques et de vieux secrets qui n’attendent qu’à être révélés."
     },
     "assets": {
-      "cover_image_string": ""
+      "cover_image_string": "/assets/storyCovers/magicGarden.jpg"
     },
     "page_one": {
-      "title": "",
-      "description": "",
-      "image": ""
+      "title": "La Porte Mystérieuse",
+      "description": "Tu traverses la forêt et vois une porte dorée recouverte de lianes lumineuses. Quelque chose derrière den t’appelle.",
+      "image": "/assets/storyOneImages/golden-gate.jpg"
     },
     "page_two": {
-      "title": "",
-      "description": "",
-      "image": ""
+      "title": "Le Sentier du Papillon Bleu",
+      "description": "Tu suis le papillon bleu chanteur plus loin dans le jardin, où l’air scintille de magie.",
+      "image": "/assets/storyOneImages/blue-bird.jpg"
     },
     "page_three": {
-      "title": "",
-      "description": "",
-      "image": ""
+      "title": "L’Énigme du Lapin Sage",
+      "description": "Le lapin blanc avec de petites lunettes te sourit malicieusement et te demande de résoudre une vieille énigme.",
+      "image": "/assets/storyOneImages/guardian-of-the-forest.jpg"
     },
     "page_four": {
-      "title": "",
-      "description": "",
-      "image": ""
+      "title": "Le Jardin des Fleurs Dorées",
+      "description": "Les fleurs dorées tintent comme de petites cloches lorsque tu t’en approches. Tu sens une chaleur magique dans l’air.",
+      "image": "/assets/storyOneImages/golden-flowers.jpg"
     },
     "page_five": {
-      "title": "",
-      "description": "",
-      "image": ""
+      "title": "L’Arbre des Souvenirs",
+      "description": "Tu poses le pied sur un nénuphar bleu saphir et sens l’eau t’envelopper avec douceur.",
+      "image": "/assets/storyOneImages/old-memory-tree.jpg"
     },
     "page_six": {
-      "title": "",
-      "description": "",
-      "image": ""
+      "title": "Le Lac de Réflexion",
+      "description": "Tu poses le pied sur un nénuphar bleu saphir et sens l’eau t’envelopper avec douceur.",
+      "image": "/assets/storyOneImages/sapphire-lily-pad.jpg"
     },
     "page_seven": {
-      "title": "",
-      "description": "",
-      "image": ""
+      "title": "La Clairière de la Vie",
+      "description": "Le nénuphar vert te mène à une clairière luxuriante où les plantes poussent sous tes yeux.",
+      "image": "/assets/storyOneImages/emerald-lily-pad.jpg"
     },
     "page_eight": {
-      "title": "",
-      "description": "",
-      "image": ""
+      "title": "La Chambre du Courage",
+      "description": "Le nénuphar rouge t’amène dans une salle remplie d’anciennes armes et de souvenirs de héros.",
+      "image": "/assets/storyOneImages/ruby-lily-pad.jpg"
     },
     "page_nine": {
-      "title": "",
-      "description": "",
-      "image": ""
+      "title": "Le Gardien du Jardin",
+      "description": "Tu choisis de devenir le protecteur du jardin et de veiller sur ses secrets.",
+      "image": "/assets/storyOneImages/you-guardian.jpg"
     },
     "page_ten": {
-      "title": "",
-      "description": "",
-      "image": ""
+      "title": "Le Guérisseur de la Terre",
+      "description": "Tu promets d’aider la nature à grandir et à guérir.",
+      "image": "/assets/storyOneImages/great-healer.jpg"
     },
     "page_eleven": {
-      "title": "",
-      "description": "",
-      "image": ""
+      "title": "Le Défenseur de la Justice",
+      "description": "Rempli de courage et de la force du phénix, tu combats pour le bien.",
+      "image": "/assets/storyOneImages/knight-of-justice.jpg"
     },
     "page_link": {
       "page_one": {
-        "choice_text_one": "",
-        "choice_text_two": "",
-        "choice_text_three": "",
-        "choice_text_four": ""
+        "choice_text_one": "Utilise la clé d’argent pour ouvrir la porte",
+        "choice_text_two": "Appelle fort pour entendre si quelqu’un répond",
+        "choice_text_three": "Examine les fleurs dorées qui brillent",
+        "choice_text_four": "Touche l’arbre ancien et noueux"
       },
       "page_two": {
-        "choice_text_one": "",
-        "choice_text_two": "",
-        "choice_text_three": ""
+        "choice_text_one": "Marche sur le nénuphar bleu saphir",
+        "choice_text_two": "Marche sur le nénuphar vert émeraude",
+        "choice_text_three": "Marche sur le nénuphar rouge rubis"
       },
       "page_three": {
-        "choice_text_one": "",
-        "choice_text_two": "",
-        "choice_text_three": ""
+        "choice_text_one": "Entre dans la Grotte de Cristal",
+        "choice_text_two": "Entre dans la Forêt des Murmures",
+        "choice_text_three": "Navigue dans le Labyrinthe des Roses"
       },
       "page_four": {
-        "choice_text_one": "",
-        "choice_text_two": "",
-        "choice_text_three": ""
+        "choice_text_one": "Fais un vœu de sagesse",
+        "choice_text_two": "Fais un vœu de courage",
+        "choice_text_three": "Fais un vœu de bonté"
       },
       "page_five": {
-        "choice_text_one": "",
-        "choice_text_two": ""
+        "choice_text_one": "Accepte le rôle de gardien",
+        "choice_text_two": "Apporte la magie au monde"
       },
       "page_six": {
-        "choice_text_one": "",
-        "choice_text_two": ""
+        "choice_text_one": "Deviens l’enseignant",
+        "choice_text_two": "Retourne dans le monde ordinaire"
       },
       "page_seven": {
-        "choice_text_one": "",
-        "choice_text_two": ""
+        "choice_text_one": "Aide à guérir la Terre",
+        "choice_text_two": "Soutiens la communauté autour de toi"
       },
       "page_eight": {
-        "choice_text_one": "",
-        "choice_text_two": ""
+        "choice_text_one": "Lutte contre l’injustice",
+        "choice_text_two": "Entraîne ceux qui doivent devenir de nouveaux protecteurs"
       }
     }
   }

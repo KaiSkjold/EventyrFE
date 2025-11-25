@@ -1,115 +1,115 @@
 {
   "settings": {
     "change_language": {
-      "danish": "",
-      "french": "",
-      "german": "",
-      "english": "",
-      "danish_dyslexic": "",
-      "danish_intermediate": "",
-      "danish_advanced": ""
+      "danish": "Dansk",
+      "french": "Fransk",
+      "german": "Tysk",
+      "english": "Engelsk",
+      "danish_dyslexic": "Dansk ordblind",
+      "danish_intermediate": "Dansk øvet",
+      "danish_advanced": "Dansk avanceret"
     }
   },
   "story_one": {
     "story_cover": {
-      "title": "",
-      "description": ""
+      "title": "Den Fortryllede Have",
+      "description": "Et eventyr om en ung gartner. Hun finder en magisk have med talende dyr og glødende blomster. I haven gemmer sig gamle hemmeligheder."
     },
     "assets": {
-      "cover_image_string": ""
+      "cover_image_string": "/assets/storyCovers/magicGarden.jpg"
     },
     "page_one": {
-      "title": "",
-      "description": "",
-      "image": ""
+      "title": "Den Gyldne Port",
+      "description": "Du går i skoven og ser en flot port med lysende planter.",
+      "image": "/assets/storyOneImages/golden-gate.jpg"
     },
     "page_two": {
-      "title": "",
-      "description": "",
-      "image": ""
+      "title": "Blåfuglens Sang",
+      "description": "Du følger fuglens sang længere ind i haven.",
+      "image": "/assets/storyOneImages/blue-bird.jpg"
     },
     "page_three": {
-      "title": "",
-      "description": "",
-      "image": ""
+      "title": "Kaninens Gåde",
+      "description": "En lille hvid kanin med briller vil lege en gættelek.",
+      "image": "/assets/storyOneImages/guardian-of-the-forest.jpg"
     },
     "page_four": {
-      "title": "",
-      "description": "",
-      "image": ""
+      "title": "De Gyldne Blomster",
+      "description": "Blomsterne ringer som små klokker, når du går tæt på.",
+      "image": "/assets/storyOneImages/golden-flowers.jpg"
     },
     "page_five": {
-      "title": "",
-      "description": "",
-      "image": ""
+      "title": "Mindertræet",
+      "description": "Du rører ved træet. Pludselig ser du gamle minder.",
+      "image": "/assets/storyOneImages/old-memory-tree.jpg"
     },
     "page_six": {
-      "title": "",
-      "description": "",
-      "image": ""
+      "title": "Søen",
+      "description": "Du træder på et åkandeblad og flyder stille på vandet.",
+      "image": "/assets/storyOneImages/sapphire-lily-pad.jpg"
     },
     "page_seven": {
-      "title": "",
-      "description": "",
-      "image": ""
+      "title": "Lunden",
+      "description": "Alt vokser hurtigt omkring dig. Træer, blomster, græs.",
+      "image": "/assets/storyOneImages/emerald-lily-pad.jpg"
     },
     "page_eight": {
-      "title": "",
-      "description": "",
-      "image": ""
+      "title": "Modets Sal",
+      "description": "Du ser sværd, rustninger og stærke minder fra gamle helte.",
+      "image": "/assets/storyOneImages/ruby-lily-pad.jpg"
     },
     "page_nine": {
-      "title": "",
-      "description": "",
-      "image": ""
+      "title": "Vogteren",
+      "description": "Du vælger at passe på haven.",
+      "image": "/assets/storyOneImages/you-guardian.jpg"
     },
     "page_ten": {
-      "title": "",
-      "description": "",
-      "image": ""
+      "title": "Helbrederen",
+      "description": "Du hjælper jorden og gør den sund igen.",
+      "image": "/assets/storyOneImages/great-healer.jpg"
     },
     "page_eleven": {
-      "title": "",
-      "description": "",
-      "image": ""
+      "title": "Helten",
+      "description": "Du kæmper for retfærdighed og får føniksens kraft.",
+      "image": "/assets/storyOneImages/knight-of-justice.jpg"
     },
     "page_link": {
       "page_one": {
-        "choice_text_one": "",
-        "choice_text_two": "",
-        "choice_text_three": "",
-        "choice_text_four": ""
+        "choice_text_one": "Brug sølvnøglen til at åbne porten",
+        "choice_text_two": "Råb for at se, om nogen er der",
+        "choice_text_three": "Kig på de gyldne blomster, der lyser",
+        "choice_text_four": "Rør ved det gamle træ"
       },
       "page_two": {
-        "choice_text_one": "",
-        "choice_text_two": "",
-        "choice_text_three": ""
+        "choice_text_one": "Træd på det blå åkandeblad",
+        "choice_text_two": "Træd på det grønne åkandeblad",
+        "choice_text_three": "Træd på det røde åkandeblad"
       },
       "page_three": {
-        "choice_text_one": "",
-        "choice_text_two": "",
-        "choice_text_three": ""
+        "choice_text_one": "Gå ind i Krystalhulen",
+        "choice_text_two": "Gå ind i De Hviskende Skove",
+        "choice_text_three": "Find vej gennem Rosenlabyrinten"
       },
       "page_four": {
-        "choice_text_one": "",
-        "choice_text_two": "",
-        "choice_text_three": ""
+        "choice_text_one": "Ønsk dig visdom",
+        "choice_text_two": "Ønsk dig mod",
+        "choice_text_three": "Ønsk dig godhed"
       },
       "page_five": {
-        "choice_text_one": "",
-        "choice_text_two": ""
+        "choice_text_one": "Tag imod rollen som vogter",
+        "choice_text_two": "Giv magien videre til verden"
       },
       "page_six": {
-        "choice_text_one": "",
-        "choice_text_two": ""
+        "choice_text_one": "Bliv en lærer",
+        "choice_text_two": "Gå tilbage til verden"
       },
       "page_seven": {
-        "choice_text_one": "",
-        "choice_text_two": ""
+        "choice_text_one": "Hjælp med at hele jorden",
+        "choice_text_two": "Hjælp dit lokale fællesskab"
       },
       "page_eight": {
-        "choice_text_one": "",
-        "choice_text_two": ""
+        "choice_text_one": "Kæmp mod uretfærdighed",
+        "choice_text_two": "Træn nye beskyttere"
       }
     }
   }

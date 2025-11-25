@@ -1,115 +1,115 @@
 {
   "settings": {
     "change_language": {
-      "danish": "",
-      "french": "",
-      "german": "",
-      "english": "",
-      "danish_dyslexic": "",
-      "danish_intermediate": "",
-      "danish_advanced": ""
+      "danish": "Dansk",
+      "french": "Fransk",
+      "german": "Tysk",
+      "english": "Engelsk",
+      "danish_dyslexic": "Dansk ordblind",
+      "danish_intermediate": "Dansk øvet",
+      "danish_advanced": "Dansk avanceret"
     }
   },
   "story_one": {
     "story_cover": {
-      "title": "",
-      "description": ""
+      "title": "Den Fortryllede Have",
+      "description": "I en fjern krog af skoven opdager en ung gartner en port, så smuk og gammel, at den synes levende. Bag den venter en have, hvor blomsterne hvisker, og dyr taler i gåder. Her flettes fortidens magi sammen med naturens dybeste hemmeligheder."
     },
     "assets": {
-      "cover_image_string": ""
+      "cover_image_string": "/assets/storyCovers/magicGarden.jpg"
     },
     "page_one": {
-      "title": "",
-      "description": "",
-      "image": ""
+      "title": "Den Gyldne Port",
+      "description": "Mens du vandrer ad den skyggefulde sti, møder du en gylden port indhyllet i skinnende vinranker, som ånder af gammel magi.",
+      "image": "/assets/storyOneImages/golden-gate.jpg"
     },
     "page_two": {
-      "title": "",
-      "description": "",
-      "image": ""
+      "title": "Blåfuglens Vej",
+      "description": "Du følger den syngende blåfugl ind i havens hjerte, hvor lyset danser på bladene.",
+      "image": "/assets/storyOneImages/blue-bird.jpg"
     },
     "page_three": {
-      "title": "",
-      "description": "",
-      "image": ""
+      "title": "Den Vise Kanins Gåde",
+      "description": "En hvid kanin med små runde briller hæver sin stemme og spørger dig en gåde, som kun et rent hjerte kan løse.",
+      "image": "/assets/storyOneImages/guardian-of-the-forest.jpg"
     },
     "page_four": {
-      "title": "",
-      "description": "",
-      "image": ""
+      "title": "De Gyldne Blomsters Have",
+      "description": "Når du nærmer dig de gyldne blomster, spiller de en blid melodi, som om jorden selv taler til dig.",
+      "image": "/assets/storyOneImages/golden-flowers.jpg"
     },
     "page_five": {
-      "title": "",
-      "description": "",
-      "image": ""
+      "title": "Erindringens Træ",
+      "description": "Idet du rører ved det ældgamle egetræ, vækkes minder fra tider før din egen.",
+      "image": "/assets/storyOneImages/old-memory-tree.jpg"
     },
     "page_six": {
-      "title": "",
-      "description": "",
-      "image": ""
+      "title": "Spejlsøen",
+      "description": "Du stiger ned på det safirblå åkandeblad og glider stille ind i søens klare spejl.",
+      "image": "/assets/storyOneImages/sapphire-lily-pad.jpg"
     },
     "page_seven": {
-      "title": "",
-      "description": "",
-      "image": ""
+      "title": "Vækstens Lund",
+      "description": "Den smaragdgrønne åkandeblad fører dig til et sted, hvor naturens kraft pulserer — alt vokser, alt ånder.",
+      "image": "/assets/storyOneImages/emerald-lily-pad.jpg"
     },
     "page_eight": {
-      "title": "",
-      "description": "",
-      "image": ""
+      "title": "Heltemodets Kammer",
+      "description": "Den rubinrøde åkandeblad bærer dig til en sal, hvor ekkoer af gamle helte stadig høres.",
+      "image": "/assets/storyOneImages/ruby-lily-pad.jpg"
     },
     "page_nine": {
-      "title": "",
-      "description": "",
-      "image": ""
+      "title": "Havens Vogter",
+      "description": "Du vælger at tjene haven, vogte dens hemmeligheder og ære dens ånd.",
+      "image": "/assets/storyOneImages/you-guardian.jpg"
     },
     "page_ten": {
-      "title": "",
-      "description": "",
-      "image": ""
+      "title": "Jordens Helbreder",
+      "description": "Du vier dit liv til at hele verden og genoprette balancen mellem menneske og natur.",
+      "image": "/assets/storyOneImages/great-healer.jpg"
     },
     "page_eleven": {
-      "title": "",
-      "description": "",
-      "image": ""
+      "title": "Retfærdighedens Forkæmper",
+      "description": "Med føniksens styrke i dit hjerte går du ud for at bringe lys og retfærdighed til verden.",
+      "image": "/assets/storyOneImages/knight-of-justice.jpg"
     },
     "page_link": {
       "page_one": {
-        "choice_text_one": "",
-        "choice_text_two": "",
-        "choice_text_three": "",
-        "choice_text_four": ""
+        "choice_text_one": "Benyt sølvnøglen til at ophæve portens lås",
+        "choice_text_two": "Udstød et kald for at afgøre, om nogen befinder sig på den anden side",
+        "choice_text_three": "Undersøg de gyldentglødende blomster i detaljen",
+        "choice_text_four": "Berør det ældgamle træ og mærk dets historie"
       },
       "page_two": {
-        "choice_text_one": "",
-        "choice_text_two": "",
-        "choice_text_three": ""
+        "choice_text_one": "Træd varsomt ud på åkandebladet i safirblå nuancer",
+        "choice_text_two": "Træd dernæst på åkandebladet med den smaragdgrønne glans",
+        "choice_text_three": "Sæt foden på åkandebladet, der stråler i rubinrødt"
       },
       "page_three": {
-        "choice_text_one": "",
-        "choice_text_two": "",
-        "choice_text_three": ""
+        "choice_text_one": "Træd ind i Krystalhulens dyb",
+        "choice_text_two": "Træd ind i De Hviskende Skoves mystik",
+        "choice_text_three": "Navigér målrettet gennem den labyrintiske Rosenhave"
       },
       "page_four": {
-        "choice_text_one": "",
-        "choice_text_two": "",
-        "choice_text_three": ""
+        "choice_text_one": "Udtal et ønske om visdom",
+        "choice_text_two": "Udtal et ønske om mod",
+        "choice_text_three": "Udtal et ønske om moralsk godhed"
       },
       "page_five": {
-        "choice_text_one": "",
-        "choice_text_two": ""
+        "choice_text_one": "Acceptér den ansvarstunge rolle som vogter",
+        "choice_text_two": "Bring magiens kraft ud i verden og lad den virke"
       },
       "page_six": {
-        "choice_text_one": "",
-        "choice_text_two": ""
+        "choice_text_one": "Indtag rollen som mentor og formidler",
+        "choice_text_two": "Vend tilbage til den verdslige verden"
       },
       "page_seven": {
-        "choice_text_one": "",
-        "choice_text_two": ""
+        "choice_text_one": "Bidrag til at læge og genoprette jordens balance",
+        "choice_text_two": "Styrk og løft det lokalsamfund, du er en del af"
       },
       "page_eight": {
-        "choice_text_one": "",
-        "choice_text_two": ""
+        "choice_text_one": "Modarbejd al form for uretfærdighed",
+        "choice_text_two": "Uddan og forbered den næste generation af beskyttere"
       }
     }
   }

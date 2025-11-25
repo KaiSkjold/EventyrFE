@@ -2,6 +2,8 @@
 // Fetch translation JSON files from Localise.biz and save them under `public/locales/<locale>/translation.json`.
 // Requires the LOCALISE_API_KEY environment variable to be set with a valid API key.
 
+// To set api key if gone $env:LOCALISE_API_KEY = "your_api_key_here"
+
 import fs from "fs";
 import fetch from "node-fetch";
 

@@ -1,115 +1,115 @@
 {
   "settings": {
     "change_language": {
-      "danish": "",
-      "french": "",
-      "german": "",
-      "english": "",
-      "danish_dyslexic": "",
-      "danish_intermediate": "",
-      "danish_advanced": ""
+      "danish": "Dansk",
+      "french": "Fransk",
+      "german": "Tysk",
+      "english": "Engelsk",
+      "danish_dyslexic": "Dansk ordblind",
+      "danish_intermediate": "Dansk øvet",
+      "danish_advanced": "Dansk avanceret"
     }
   },
   "story_one": {
     "story_cover": {
-      "title": "",
-      "description": ""
+      "title": "Den Fortryllede Have",
+      "description": "Et magisk eventyr om en ung gartner, der finder en mystisk have fuld af talende dyr, magiske blomster og gamle hemmeligheder, som venter på at blive opdaget."
     },
     "assets": {
-      "cover_image_string": ""
+      "cover_image_string": "/assets/storyCovers/magicGarden.jpg"
     },
     "page_one": {
-      "title": "",
-      "description": "",
-      "image": ""
+      "title": "Den Mystiske Port",
+      "description": "Du går gennem skoven og ser en gylden port dækket af glødende slyngplanter. Noget bag den kalder på dig.",
+      "image": "/assets/storyOneImages/golden-gate.jpg"
     },
     "page_two": {
-      "title": "",
-      "description": "",
-      "image": ""
+      "title": "Blåfuglens Sti",
+      "description": "Du følger den syngende blåfugl længere ind i haven, hvor luften sitrer af magi.",
+      "image": "/assets/storyOneImages/blue-bird.jpg"
     },
     "page_three": {
-      "title": "",
-      "description": "",
-      "image": ""
+      "title": "Den Vise Kanins Gåde",
+      "description": "Den hvide kanin med små briller smiler listigt og beder dig løse en gammel gåde.",
+      "image": "/assets/storyOneImages/guardian-of-the-forest.jpg"
     },
     "page_four": {
-      "title": "",
-      "description": "",
-      "image": ""
+      "title": "De Gyldne Blomsters Have",
+      "description": "De gyldne blomster klirrer som klokker, da du træder tæt på. Du mærker en varm kraft i luften.",
+      "image": "/assets/storyOneImages/golden-flowers.jpg"
     },
     "page_five": {
-      "title": "",
-      "description": "",
-      "image": ""
+      "title": "Erindringstræet",
+      "description": "Du rører ved det store egetræ, og billeder fra en anden tid fylder dit sind.",
+      "image": "/assets/storyOneImages/old-memory-tree.jpg"
     },
     "page_six": {
-      "title": "",
-      "description": "",
-      "image": ""
+      "title": "Refleksionens Sø",
+      "description": "Du træder ud på et safirblåt åkandeblad og mærker, hvordan vandet omslutter dig blidt.",
+      "image": "/assets/storyOneImages/sapphire-lily-pad.jpg"
     },
     "page_seven": {
-      "title": "",
-      "description": "",
-      "image": ""
+      "title": "Lunden af Liv",
+      "description": "Det grønne åkandeblad fører dig til en frodig lund, hvor planter vokser for øjnene af dig.",
+      "image": "/assets/storyOneImages/emerald-lily-pad.jpg"
     },
     "page_eight": {
-      "title": "",
-      "description": "",
-      "image": ""
+      "title": "Modets Kammer",
+      "description": "Det røde åkandeblad bringer dig til en sal fyldt med gamle våben og minder fra helte.",
+      "image": "/assets/storyOneImages/ruby-lily-pad.jpg"
     },
     "page_nine": {
-      "title": "",
-      "description": "",
-      "image": ""
+      "title": "Havens Vogter",
+      "description": "Du beslutter at blive havens beskytter og passe på dens hemmeligheder.",
+      "image": "/assets/storyOneImages/you-guardian.jpg"
     },
     "page_ten": {
-      "title": "",
-      "description": "",
-      "image": ""
+      "title": "Jordens Helbreder",
+      "description": "Du lover at hjælpe naturen med at gro og hele igen.",
+      "image": "/assets/storyOneImages/great-healer.jpg"
     },
     "page_eleven": {
-      "title": "",
-      "description": "",
-      "image": ""
+      "title": "Retfærdighedens Forkæmper",
+      "description": "Fyldt med mod og føniksens kraft kæmper du for det gode.",
+      "image": "/assets/storyOneImages/knight-of-justice.jpg"
     },
     "page_link": {
       "page_one": {
-        "choice_text_one": "",
-        "choice_text_two": "",
-        "choice_text_three": "",
-        "choice_text_four": ""
+        "choice_text_one": "Brug sølvnøglen til at låse porten op",
+        "choice_text_two": "Kald højt for at høre, om nogen svarer",
+        "choice_text_three": "Undersøg de gyldne blomster, der gløder",
+        "choice_text_four": "Rør ved det gamle, knudrede træ"
       },
       "page_two": {
-        "choice_text_one": "",
-        "choice_text_two": "",
-        "choice_text_three": ""
+        "choice_text_one": "Træd på det safirblå åkandeblad",
+        "choice_text_two": "Træd på det smaragdgrønne åkandeblad",
+        "choice_text_three": "Træd på det rubinrøde åkandeblad"
       },
       "page_three": {
-        "choice_text_one": "",
-        "choice_text_two": "",
-        "choice_text_three": ""
+        "choice_text_one": "Gå ind i Krystalhulen",
+        "choice_text_two": "Gå ind i De Hviskende Skove",
+        "choice_text_three": "Navigér i Rosenlabyrinten"
       },
       "page_four": {
-        "choice_text_one": "",
-        "choice_text_two": "",
-        "choice_text_three": ""
+        "choice_text_one": "Ønsk efter visdom",
+        "choice_text_two": "Ønsk efter mod",
+        "choice_text_three": "Ønsk efter godhed"
       },
       "page_five": {
-        "choice_text_one": "",
-        "choice_text_two": ""
+        "choice_text_one": "Ønsk efter godhed",
+        "choice_text_two": "Bring magien ud i verden"
       },
       "page_six": {
-        "choice_text_one": "",
-        "choice_text_two": ""
+        "choice_text_one": "Bliv underviseren",
+        "choice_text_two": "Vend tilbage til den almindelige verden"
       },
       "page_seven": {
-        "choice_text_one": "",
-        "choice_text_two": ""
+        "choice_text_one": "Hjælp med at hele jorden",
+        "choice_text_two": "Støt fællesskabet omkring dig"
       },
       "page_eight": {
-        "choice_text_one": "",
-        "choice_text_two": ""
+        "choice_text_one": "Kæmp imod uretfærdighed",
+        "choice_text_two": "Træn dem, der skal blive nye beskyttere"
       }
     }
   }
