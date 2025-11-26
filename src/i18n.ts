@@ -6,11 +6,8 @@ i18n
   .use(HttpBackend)
   .use(initReactI18next)
    .init({
-    // When the browser or system reports a regional code like 'da-DK',
-    // use language-only ('da') so we request the translation file that
-    // exists at `/locales/da/translation.json` instead of `/locales/da-DK/...`.
-    // This avoids missing-file errors when the app sees region codes.
-    load: 'languageOnly',
+    //This was language only but now includes variants
+    load: 'all',
     // Leave `lng` unset so i18n uses its default language detection.
     fallbackLng: {
       'da-dyslexic': ['da-dyslexic', 'da'],
